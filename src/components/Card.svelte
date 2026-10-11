@@ -3,18 +3,27 @@
   import { formatDate, formatGrind, formatGate } from '../lib/score.js'
 
   let { a } = $props()
-  let noteOpen = $state(false)
+  let open = $state(false)
 
   let medal = $derived(['gold', 'silver', 'bronze'][a.rank - 1] ?? '')
+  let victors = $derived([...(a.victors ?? [])].sort((x, y) => x.date.localeCompare(y.date)))
+  let victorTotal = $derived(Math.max(a.victorCount ?? 0, victors.length))
 
   function joinNames(names) {
     if (names.length <= 2) return names.join(' and ')
     return `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`
   }
+
+  function onKey(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      open = !open
+    }
+  }
 </script>
 
-<article class="card" class:has-image={a.image}>
-  <div class="body">
+<article class="card" class:has-image={a.image} class:open id={a.id}>
+  <div class="body" role="button" tabindex="0" aria-expanded={open} onclick={() => (open = !open)} onkeydown={onKey}>
     <span class="rank {medal}">#{a.rank}</span>
     <h3>{a.name}</h3>
     <p class="by">by <span>{joinNames(a.by)}</span> <span class="country">{a.country}</span></p>
@@ -25,9 +34,7 @@
       <div><dt>Luck</dt><dd>{a.luck} flips</dd></div>
       <div><dt>Grind</dt><dd>{formatGrind(a.grind)}</dd></div>
       <div><dt>Gate</dt><dd>{formatGate(a.gate)}</dd></div>
-      {#if a.victors}
-        <div><dt>Victors</dt><dd>{a.victors}</dd></div>
-      {/if}
+      <div><dt>Victors</dt><dd>{victorTotal.toLocaleString()}</dd></div>
     </dl>
 
     <div class="foot">
@@ -36,18 +43,39 @@
           <li title={tags[t]?.info}>{tags[t]?.label ?? t}</li>
         {/each}
       </ul>
-      {#if a.note}
-        <button class="note-btn" onclick={() => (noteOpen = !noteOpen)}>Note</button>
-      {/if}
+      <span class="more">{open ? 'Less' : 'More'}</span>
     </div>
-
-    {#if noteOpen}
-      <p class="note">{a.note}</p>
-    {/if}
   </div>
 
   {#if a.image}
     <img src={a.image} alt="" loading="lazy" />
+  {/if}
+
+  {#if open}
+    <div class="details">
+      {#if a.note}
+        <p class="note">{a.note}</p>
+      {/if}
+
+      <h4>Victors</h4>
+      {#if victors.length}
+        <ol class="victors">
+          {#each victors as v, i}
+            <li>
+              <span class="num">{i + 1}</span>
+              <span class="who">{v.name}</span>
+              {#if v.note}<span class="vnote">{v.note}</span>{/if}
+              <span class="when">{formatDate(v.date)}</span>
+            </li>
+          {/each}
+        </ol>
+      {/if}
+      {#if victorTotal > victors.length}
+        <p class="empty">{victors.length ? 'Plus' : 'About'} {(victorTotal - victors.length).toLocaleString()} {victors.length ? 'more' : 'people'} not listed yet.</p>
+      {:else if !victors.length}
+        <p class="empty">Nobody has done it again yet.</p>
+      {/if}
+    </div>
   {/if}
 </article>
 
@@ -65,9 +93,19 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
   }
 
+  .card.open {
+    border-color: #3a3e45;
+  }
+
   .body {
     padding: 18px 22px;
     min-width: 0;
+    cursor: pointer;
+  }
+
+  .body:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
   }
 
   img {
@@ -170,25 +208,84 @@
     color: var(--muted);
     background: var(--surface-2);
     border-radius: 4px;
-    cursor: default;
   }
 
-  .note-btn {
+  .more {
     flex-shrink: 0;
-    padding: 3px 10px;
     font-size: 12px;
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: 4px;
     color: var(--muted);
   }
 
-  .note-btn:hover {
+  .body:hover .more {
     color: var(--text);
   }
 
+  .details {
+    grid-column: 1 / -1;
+    padding: 16px 22px 20px;
+    background: var(--surface-2);
+    border-top: 1px solid var(--border);
+  }
+
   .note {
-    margin: 10px 0 0;
+    margin: 0 0 14px;
+    font-size: 14px;
+  }
+
+  h4 {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .victors {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .victors li {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 7px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .victors li:last-child {
+    border-bottom: none;
+  }
+
+  .num {
+    width: 22px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .who {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .vnote {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .when {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .empty {
+    margin: 4px 0 0;
     font-size: 14px;
     color: var(--muted);
   }
@@ -203,8 +300,14 @@
       height: 140px;
     }
 
-    .body {
-      padding: 16px;
+    .body,
+    .details {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .vnote {
+      display: none;
     }
   }
 </style>

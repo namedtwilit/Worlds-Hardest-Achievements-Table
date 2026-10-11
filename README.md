@@ -29,11 +29,18 @@ Add an object to `src/data/achievements.json`:
   "luck": 5,
   "grind": 8,
   "gate": 1e9,
-  "tags": ["first", "team"]
+  "tags": ["first", "team"],
+  "added": "2026-10-10"
 }
 ```
 
-Optional fields: `victors`, `note`, `image`, and `adjust` (added to the score to nudge a placement).
+`added` is the day the entry went on the list. The timeline uses it for the list history.
+
+Optional fields:
+
+- `victors`: people who did it after, like `[{ "name": "John Landy", "date": "1954-06-21" }]`. Each one can also have a `note`.
+- `victorCount`: total victors when there are too many to list, like Everest.
+- `note`, `image`, and `adjust` (added to the score to nudge a placement).
 
 ## Running locally
 

@@ -2,282 +2,536 @@
   {
     "id": "apollo-11",
     "name": "First crewed Moon landing",
-    "by": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins"],
+    "by": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Michael Collins"
+    ],
     "country": "US",
     "date": "1969-07-20",
     "where": "Sea of Tranquility, Moon",
     "luck": 5,
     "grind": 8,
     "gate": 1e9,
-    "victors": 10,
-    "tags": ["first", "team", "physical", "mental"]
+    "tags": [
+      "first",
+      "team",
+      "physical",
+      "mental"
+    ],
+    "victors": [
+      {
+        "name": "Pete Conrad, Alan Bean",
+        "date": "1969-11-19",
+        "note": "Apollo 12"
+      },
+      {
+        "name": "Alan Shepard, Edgar Mitchell",
+        "date": "1971-02-05",
+        "note": "Apollo 14"
+      },
+      {
+        "name": "David Scott, James Irwin",
+        "date": "1971-07-30",
+        "note": "Apollo 15"
+      },
+      {
+        "name": "John Young, Charles Duke",
+        "date": "1972-04-21",
+        "note": "Apollo 16"
+      },
+      {
+        "name": "Eugene Cernan, Harrison Schmitt",
+        "date": "1972-12-11",
+        "note": "Apollo 17"
+      }
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "everest-first",
     "name": "First ascent of Mount Everest",
-    "by": ["Edmund Hillary", "Tenzing Norgay"],
+    "by": [
+      "Edmund Hillary",
+      "Tenzing Norgay"
+    ],
     "country": "NZ, NP",
     "date": "1953-05-29",
     "where": "Mount Everest",
     "luck": 3,
     "grind": 3,
     "gate": 1e5,
-    "tags": ["first", "physical", "endurance"]
+    "tags": [
+      "first",
+      "physical",
+      "endurance"
+    ],
+    "victorCount": 10000,
+    "added": "2026-10-10"
   },
   {
     "id": "everest-no-oxygen",
     "name": "Everest without bottled oxygen",
-    "by": ["Reinhold Messner", "Peter Habeler"],
+    "by": [
+      "Reinhold Messner",
+      "Peter Habeler"
+    ],
     "country": "IT, AT",
     "date": "1978-05-08",
     "where": "Mount Everest",
     "luck": 5,
     "grind": 5,
     "gate": 1e7,
-    "tags": ["first", "physical", "endurance", "variant"]
+    "tags": [
+      "first",
+      "physical",
+      "endurance",
+      "variant"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "freerider-free-solo",
     "name": "Free solo of El Capitan (Freerider)",
-    "by": ["Alex Honnold"],
+    "by": [
+      "Alex Honnold"
+    ],
     "country": "US",
     "date": "2017-06-03",
     "where": "Yosemite, California",
     "luck": 9,
     "grind": 10,
     "gate": 1e8,
-    "tags": ["first", "solo", "physical", "mental"]
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "fermat",
     "name": "Proof of Fermat's Last Theorem",
-    "by": ["Andrew Wiles"],
+    "by": [
+      "Andrew Wiles"
+    ],
     "country": "GB",
     "date": "1994-09",
     "where": "Princeton, New Jersey",
     "luck": 4,
     "grind": 7,
     "gate": 1e9,
-    "tags": ["first", "solo", "mental"]
+    "tags": [
+      "first",
+      "solo",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "poincare",
     "name": "Proof of the Poincare conjecture",
-    "by": ["Grigori Perelman"],
+    "by": [
+      "Grigori Perelman"
+    ],
     "country": "RU",
     "date": "2002-11",
     "where": "Saint Petersburg",
     "luck": 3,
     "grind": 8,
     "gate": 1e9,
-    "tags": ["first", "solo", "mental"]
+    "tags": [
+      "first",
+      "solo",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "k2-winter",
     "name": "First winter ascent of K2",
-    "by": ["Nirmal Purja", "Mingma Gyalje Sherpa", "and 8 others"],
+    "by": [
+      "Nirmal Purja",
+      "Mingma Gyalje Sherpa",
+      "and 8 others"
+    ],
     "country": "NP",
     "date": "2021-01-16",
     "where": "K2",
     "luck": 6,
     "grind": 6,
     "gate": 1e7,
-    "tags": ["first", "team", "physical", "endurance"]
+    "tags": [
+      "first",
+      "team",
+      "physical",
+      "endurance"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "challenger-deep",
     "name": "First descent to Challenger Deep",
-    "by": ["Jacques Piccard", "Don Walsh"],
+    "by": [
+      "Jacques Piccard",
+      "Don Walsh"
+    ],
     "country": "CH, US",
     "date": "1960-01-23",
     "where": "Mariana Trench",
     "luck": 4,
     "grind": 2,
     "gate": 1e6,
-    "tags": ["first", "team"]
+    "tags": [
+      "first",
+      "team"
+    ],
+    "victors": [
+      {
+        "name": "James Cameron",
+        "date": "2012-03-26",
+        "note": "First solo descent"
+      },
+      {
+        "name": "Victor Vescovo",
+        "date": "2019-04-28"
+      }
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "smallpox",
     "name": "Eradication of smallpox",
-    "by": ["World Health Organization"],
+    "by": [
+      "World Health Organization"
+    ],
     "country": "Global",
     "date": "1980-05-08",
     "where": "Worldwide",
     "luck": 3,
     "grind": 13,
     "gate": 1e9,
-    "tags": ["first", "team", "mental"]
+    "tags": [
+      "first",
+      "team",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "sub-2-marathon",
     "name": "Marathon under 2 hours",
-    "by": ["Eliud Kipchoge"],
+    "by": [
+      "Eliud Kipchoge"
+    ],
     "country": "KE",
     "date": "2019-10-12",
     "where": "Vienna",
     "luck": 6,
     "grind": 18,
     "gate": 1e8,
-    "tags": ["first", "solo", "physical", "endurance", "unofficial"],
-    "note": "1:59:40 with rotating pacers, so it doesn't count as an official record."
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "endurance",
+      "unofficial"
+    ],
+    "note": "1:59:40 with rotating pacers, so it doesn't count as an official record.",
+    "added": "2026-10-10"
   },
   {
     "id": "most-days-in-space",
     "name": "Most total days in space",
-    "by": ["Oleg Kononenko"],
+    "by": [
+      "Oleg Kononenko"
+    ],
     "country": "RU",
     "date": "2024-09-23",
     "where": "ISS",
     "luck": 1,
     "grind": 3,
     "gate": 1e6,
-    "tags": ["record", "solo", "endurance"],
-    "note": "1,111 days across five missions."
+    "tags": [
+      "record",
+      "solo",
+      "endurance"
+    ],
+    "note": "1,111 days across five missions.",
+    "added": "2026-10-10"
   },
   {
     "id": "black-hole-image",
     "name": "First image of a black hole",
-    "by": ["Event Horizon Telescope"],
+    "by": [
+      "Event Horizon Telescope"
+    ],
     "country": "Global",
     "date": "2019-04-10",
     "where": "M87*",
     "luck": 2,
     "grind": 10,
     "gate": 1e7,
-    "tags": ["first", "team", "mental"]
+    "tags": [
+      "first",
+      "team",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "longest-spaceflight",
     "name": "Longest single spaceflight",
-    "by": ["Valeri Polyakov"],
+    "by": [
+      "Valeri Polyakov"
+    ],
     "country": "RU",
     "date": "1995-03-22",
     "where": "Mir",
     "luck": 1,
     "grind": 2,
     "gate": 1e6,
-    "tags": ["record", "solo", "endurance"],
-    "note": "437 days without coming back down."
+    "tags": [
+      "record",
+      "solo",
+      "endurance"
+    ],
+    "note": "437 days without coming back down.",
+    "added": "2026-10-10"
   },
   {
     "id": "paper-12-folds",
     "name": "Folding paper in half 12 times",
-    "by": ["Britney Gallivan"],
+    "by": [
+      "Britney Gallivan"
+    ],
     "country": "US",
     "date": "2002",
     "where": "Pomona, California",
     "luck": 3,
     "grind": 0.1,
     "gate": 1e4,
-    "tags": ["first", "solo", "mental"]
+    "tags": [
+      "first",
+      "solo",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "solo-nonstop-circumnavigation",
     "name": "First solo nonstop sail around the world",
-    "by": ["Robin Knox-Johnston"],
+    "by": [
+      "Robin Knox-Johnston"
+    ],
     "country": "GB",
     "date": "1969-04-22",
     "where": "Falmouth, England",
     "luck": 4,
     "grind": 1,
     "gate": 1e6,
-    "tags": ["first", "solo", "endurance"]
+    "tags": [
+      "first",
+      "solo",
+      "endurance"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "four-minute-mile",
     "name": "First mile under 4 minutes",
-    "by": ["Roger Bannister"],
+    "by": [
+      "Roger Bannister"
+    ],
     "country": "GB",
     "date": "1954-05-06",
     "where": "Oxford",
     "luck": 3,
     "grind": 8,
     "gate": 1e6,
-    "tags": ["first", "solo", "physical"]
+    "tags": [
+      "first",
+      "solo",
+      "physical"
+    ],
+    "victors": [
+      {
+        "name": "John Landy",
+        "date": "1954-06-21"
+      }
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "human-genome",
     "name": "Sequencing the human genome",
-    "by": ["Human Genome Project"],
+    "by": [
+      "Human Genome Project"
+    ],
     "country": "Global",
     "date": "2003-04-14",
     "where": "Worldwide",
     "luck": 1,
     "grind": 13,
     "gate": 1e7,
-    "tags": ["first", "team", "mental"]
+    "tags": [
+      "first",
+      "team",
+      "mental"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "all-14-eight-thousanders",
     "name": "Climbing all 14 eight-thousanders",
-    "by": ["Reinhold Messner"],
+    "by": [
+      "Reinhold Messner"
+    ],
     "country": "IT",
     "date": "1986-10-16",
     "where": "Himalaya and Karakoram",
     "luck": 7,
     "grind": 16,
     "gate": 1e7,
-    "tags": ["first", "solo", "physical", "endurance"]
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "endurance"
+    ],
+    "victors": [
+      {
+        "name": "Jerzy Kukuczka",
+        "date": "1987-09-18"
+      }
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "project-possible",
     "name": "All 14 eight-thousanders in under 7 months",
-    "by": ["Nirmal Purja"],
+    "by": [
+      "Nirmal Purja"
+    ],
     "country": "NP",
     "date": "2019-10-29",
     "where": "Himalaya and Karakoram",
     "luck": 6,
     "grind": 10,
     "gate": 1e7,
-    "tags": ["record", "team", "physical", "endurance", "variant"]
+    "tags": [
+      "record",
+      "team",
+      "physical",
+      "endurance",
+      "variant"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "stratos",
     "name": "Skydive from the stratosphere",
-    "by": ["Felix Baumgartner"],
+    "by": [
+      "Felix Baumgartner"
+    ],
     "country": "AT",
     "date": "2012-10-14",
     "where": "Roswell, New Mexico",
     "luck": 4,
     "grind": 5,
     "gate": 1e6,
-    "tags": ["record", "solo", "physical"]
+    "tags": [
+      "record",
+      "solo",
+      "physical"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "great-british-swim",
     "name": "Swimming around Great Britain",
-    "by": ["Ross Edgley"],
+    "by": [
+      "Ross Edgley"
+    ],
     "country": "GB",
     "date": "2018-11-04",
     "where": "Great Britain",
     "luck": 3,
     "grind": 1,
     "gate": 1e6,
-    "tags": ["first", "solo", "endurance"],
-    "note": "157 days at sea."
+    "tags": [
+      "first",
+      "solo",
+      "endurance"
+    ],
+    "note": "157 days at sea.",
+    "added": "2026-10-10"
   },
   {
     "id": "the-nose-free",
     "name": "First free ascent of The Nose",
-    "by": ["Lynn Hill"],
+    "by": [
+      "Lynn Hill"
+    ],
     "country": "US",
     "date": "1993",
     "where": "Yosemite, California",
     "luck": 6,
     "grind": 15,
     "gate": 1e6,
-    "tags": ["first", "solo", "physical"]
+    "tags": [
+      "first",
+      "solo",
+      "physical"
+    ],
+    "added": "2026-10-10"
   },
   {
     "id": "solo-atlantic-flight",
     "name": "First solo nonstop flight across the Atlantic",
-    "by": ["Charles Lindbergh"],
+    "by": [
+      "Charles Lindbergh"
+    ],
     "country": "US",
     "date": "1927-05-21",
     "where": "New York to Paris",
     "luck": 3,
     "grind": 1,
     "gate": 1e5,
-    "tags": ["first", "solo", "endurance"]
+    "tags": [
+      "first",
+      "solo",
+      "endurance"
+    ],
+    "victors": [
+      {
+        "name": "Amelia Earhart",
+        "date": "1932-05-21",
+        "note": "First woman to do it"
+      }
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "nes-tetris-crash",
+    "name": "First person to beat NES Tetris",
+    "by": [
+      "Willis Gibson"
+    ],
+    "country": "US",
+    "date": "2023-12-21",
+    "where": "Stillwater, Oklahoma",
+    "luck": 7,
+    "grind": 3,
+    "gate": 1e6,
+    "tags": [
+      "first",
+      "solo",
+      "game",
+      "mental"
+    ],
+    "note": "Played until the game crashed, the only way to \"beat\" it.",
+    "added": "2026-10-11"
   }
 ]

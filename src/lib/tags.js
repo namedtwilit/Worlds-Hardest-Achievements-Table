@@ -7,6 +7,7 @@ export const tags = {
   mental: { label: 'Mental', info: 'Mostly about the mind' },
   endurance: { label: 'Endurance', info: 'Lasted a long time' },
   luck: { label: 'Luck', info: 'Mostly decided by chance' },
+  game: { label: 'Game', info: 'Done in a video game' },
   variant: { label: 'Variant', info: 'A harder or different version of another entry' },
   unofficial: { label: 'Unofficial', info: 'Done, but not under official rules' },
   tentative: { label: 'Tentative', info: 'Placement not settled yet' },

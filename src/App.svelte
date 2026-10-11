@@ -3,8 +3,28 @@
   import { rankAll, sectionOf } from './lib/score.js'
   import Card from './components/Card.svelte'
   import Panel from './components/Panel.svelte'
+  import Timeline from './components/Timeline.svelte'
+  import { tick } from 'svelte'
 
   const ranked = rankAll(data)
+
+  let view = $state(location.hash === '#timeline' ? 'timeline' : 'list')
+
+  function go(v) {
+    view = v
+    history.replaceState(null, '', v === 'timeline' ? '#timeline' : location.pathname)
+    window.scrollTo(0, 0)
+  }
+
+  async function jump(id) {
+    query = ''
+    active = []
+    sortBy = 'rank'
+    ascending = true
+    go('list')
+    await tick()
+    document.getElementById(id)?.scrollIntoView({ block: 'center' })
+  }
 
   let query = $state('')
   let sortBy = $state('rank')
@@ -45,12 +65,23 @@
     <span class="logo">W.H.A.T</span>
     <span class="full">Worlds Hardest Achievements Table</span>
   </div>
-  <input class="search" type="search" placeholder="Search by name, person or place" bind:value={query} />
-  <button class="panel-toggle" onclick={() => (panelOpen = !panelOpen)}>
-    {panelOpen ? 'Hide filters' : 'Filters'}
-  </button>
+  <nav>
+    <button class:on={view === 'list'} onclick={() => go('list')}>List</button>
+    <button class:on={view === 'timeline'} onclick={() => go('timeline')}>Timeline</button>
+  </nav>
+  {#if view === 'list'}
+    <input class="search" type="search" placeholder="Search by name, person or place" bind:value={query} />
+    <button class="panel-toggle" onclick={() => (panelOpen = !panelOpen)}>
+      {panelOpen ? 'Hide filters' : 'Filters'}
+    </button>
+  {/if}
 </header>
 
+{#if view === 'timeline'}
+  <div class="layout single">
+    <Timeline {data} {ranked} onjump={jump} />
+  </div>
+{:else}
 <div class="layout">
   <main>
     {#if shown.length === 0}
@@ -68,6 +99,7 @@
     <Panel bind:sortBy bind:ascending bind:active total={ranked.length} count={shown.length} />
   </aside>
 </div>
+{/if}
 
 <style>
   header {
@@ -113,6 +145,35 @@
   .search:focus {
     outline: none;
     border-color: var(--accent);
+  }
+
+  nav {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  nav button {
+    padding: 7px 12px;
+    font-size: 14px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--muted);
+  }
+
+  nav button:hover {
+    color: var(--text);
+  }
+
+  nav button.on {
+    color: var(--text);
+    border-color: var(--border);
+    background: var(--surface);
+  }
+
+  .layout.single {
+    display: block;
   }
 
   .panel-toggle {
