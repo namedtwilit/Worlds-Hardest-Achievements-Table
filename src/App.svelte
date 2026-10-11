@@ -36,9 +36,10 @@
     rank: (a, b) => a.rank - b.rank,
     date: (a, b) => a.date.localeCompare(b.date),
     name: (a, b) => a.name.localeCompare(b.name),
-    luck: (a, b) => a.luck - b.luck,
-    grind: (a, b) => a.grind - b.grind,
-    gate: (a, b) => a.gate - b.gate
+    luck: (a, b) => a.parts.luck - b.parts.luck,
+    grind: (a, b) => a.parts.grind - b.parts.grind,
+    ceiling: (a, b) => a.parts.ceiling - b.parts.ceiling,
+    stakes: (a, b) => a.parts.stakes - b.parts.stakes
   }
 
   let shown = $derived.by(() => {

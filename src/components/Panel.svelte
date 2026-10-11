@@ -9,7 +9,8 @@
     ['name', 'Name'],
     ['luck', 'Luck'],
     ['grind', 'Grind'],
-    ['gate', 'Gate']
+    ['ceiling', 'Ceiling'],
+    ['stakes', 'Stakes']
   ]
 
   function toggle(t) {

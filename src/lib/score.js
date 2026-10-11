@@ -41,9 +41,12 @@ export function parts(a) {
   }
 }
 
+export const stakesWeight = 0.5
+export const maxScore = 30 + 10 * stakesWeight
+
 export function score(a) {
   const p = parts(a)
-  return round1(p.luck + p.grind + p.ceiling + p.stakes + (a.adjust ?? 0))
+  return round1(p.luck + p.grind + p.ceiling + p.stakes * stakesWeight + (a.adjust ?? 0))
 }
 
 export function rankAll(list) {

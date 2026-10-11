@@ -1,6 +1,6 @@
 <script>
   import { tags } from '../lib/tags.js'
-  import { formatDate, formatGrind, formatGate } from '../lib/score.js'
+  import { formatDate, formatOdds, describeGrind, describeStakes, stakesWeight, maxScore } from '../lib/score.js'
 
   let { a } = $props()
   let open = $state(false)
@@ -31,10 +31,15 @@
     <dl class="stats">
       <div><dt>Date</dt><dd>{formatDate(a.date)}</dd></div>
       <div><dt>Where</dt><dd>{a.where}</dd></div>
-      <div><dt>Luck</dt><dd>{a.luck} flips</dd></div>
-      <div><dt>Grind</dt><dd>{formatGrind(a.grind)}</dd></div>
-      <div><dt>Gate</dt><dd>{formatGate(a.gate)}</dd></div>
       <div><dt>Victors</dt><dd>{victorTotal.toLocaleString()}</dd></div>
+    </dl>
+
+    <dl class="scores">
+      <div class="total"><dt>Score</dt><dd>{a.score}<span>/{maxScore}</span></dd></div>
+      <div><dt>Luck</dt><dd>{a.parts.luck}</dd></div>
+      <div><dt>Grind</dt><dd>{a.parts.grind}</dd></div>
+      <div><dt>Ceiling</dt><dd>{a.parts.ceiling}</dd></div>
+      <div><dt>Stakes</dt><dd>{a.parts.stakes}</dd></div>
     </dl>
 
     <div class="foot">
@@ -56,6 +61,14 @@
       {#if a.note}
         <p class="note">{a.note}</p>
       {/if}
+
+      <h4>Why this score</h4>
+      <ul class="why">
+        <li><span>Luck {a.parts.luck}</span>{formatOdds(a.odds)} on the run that counted</li>
+        <li><span>Grind {a.parts.grind}</span>{describeGrind(a.parts.grind)} from zero</li>
+        <li><span>Ceiling {a.parts.ceiling}</span>{a.ceiling <= 1 ? 'almost anyone could' : `${formatOdds(a.ceiling)} people could ever do it`}</li>
+        <li><span>Stakes {a.parts.stakes}</span>failing means {describeStakes(a.parts.stakes)}, counts {stakesWeight === 0.5 ? 'half' : `x${stakesWeight}`}</li>
+      </ul>
 
       <h4>Victors</h4>
       {#if victors.length}
@@ -183,6 +196,54 @@
   .stats dd {
     margin: 0;
     font-size: 14px;
+  }
+
+  .scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    margin: 10px 0 0;
+  }
+
+  .scores dt {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .scores dd {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 14px;
+  }
+
+  .scores .total dd {
+    color: var(--accent);
+  }
+
+  .scores .total span {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .why {
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+  }
+
+  .why li {
+    padding: 3px 0;
+  }
+
+  .why span {
+    display: inline-block;
+    width: 92px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
   }
 
   .foot {
