@@ -2,95 +2,91 @@
   import { score, formatDate } from '../lib/score.js'
 
   let { data, ranked, onjump } = $props()
-  let mode = $state('history')
+  let mode = $state('world')
 
-  const rankOf = Object.fromEntries(ranked.map((a) => [a.id, a.rank]))
+  const scored = data.map((a) => ({ ...a, score: score(a) }))
+  const rankNow = Object.fromEntries(ranked.map((a) => [a.id, a.rank]))
+  const thisYear = new Date().getFullYear()
+  const firstYear = Math.min(...data.map((a) => +a.date.slice(0, 4)))
+  const addedDates = [...new Set(data.map((a) => a.added))].sort()
 
-  let worldEvents = $derived.by(() => {
-    const out = []
-    for (const a of ranked) {
-      out.push({ date: a.date, id: a.id, kind: 'done', title: a.name, who: a.by.join(', '), rank: a.rank })
-      for (const v of a.victors ?? []) {
-        out.push({ date: v.date, id: a.id, kind: 'victor', title: a.name, who: v.name, rank: a.rank })
-      }
-    }
-    return out.sort((x, y) => x.date.localeCompare(y.date))
-  })
+  let year = $state(thisYear)
+  let step = $state(addedDates.length - 1)
 
-  let listEvents = $derived.by(() => {
-    const order = [...data].sort((x, y) => x.added.localeCompare(y.added) || x.date.localeCompare(y.date))
-    const out = []
-    const seen = []
-    for (const a of order) {
-      const s = score(a)
-      const placed = seen.filter((x) => x > s).length + 1
-      seen.push(s)
-      out.push({ date: a.added, id: a.id, kind: 'added', title: a.name, who: a.by.join(', '), placed, rank: rankOf[a.id] })
-    }
-    return out.reverse()
-  })
-
-  let events = $derived(mode === 'world' ? worldEvents : listEvents)
-
-  let groups = $derived.by(() => {
-    const out = []
-    for (const e of events) {
-      const key = mode === 'world' ? e.date.slice(0, 4) : formatDate(e.date)
-      if (!out.length || out.at(-1).key !== key) out.push({ key, year: +e.date.slice(0, 4), items: [] })
-      out.at(-1).items.push(e)
-    }
-    return out
-  })
-
-  function gap(i) {
-    if (mode !== 'world' || i === 0) return 0
-    return groups[i].year - groups[i - 1].year
+  function upTo(a) {
+    return mode === 'world' ? +a.date.slice(0, 4) <= year : a.added <= addedDates[step]
   }
+
+  function isNew(a) {
+    return mode === 'world' ? +a.date.slice(0, 4) === year : a.added === addedDates[step]
+  }
+
+  function victorsBy(a) {
+    const listed = a.victors ?? []
+    if (mode !== 'world') return Math.max(a.victorCount ?? 0, listed.length)
+    if (year >= thisYear) return Math.max(a.victorCount ?? 0, listed.length)
+    return listed.filter((v) => +v.date.slice(0, 4) <= year).length
+  }
+
+  let rows = $derived(
+    scored
+      .filter(upTo)
+      .sort((x, y) => y.score - x.score)
+      .map((a, i) => ({ ...a, at: i + 1, fresh: isNew(a), victorsThen: victorsBy(a) }))
+  )
+
+  let freshCount = $derived(rows.filter((r) => r.fresh).length)
+  let label = $derived(mode === 'world' ? String(year) : formatDate(addedDates[step]))
 </script>
 
 <div class="timeline">
   <div class="modes">
-    <button class:on={mode === 'history'} onclick={() => (mode = 'history')}>List history</button>
     <button class:on={mode === 'world'} onclick={() => (mode = 'world')}>Real history</button>
+    <button class:on={mode === 'history'} onclick={() => (mode = 'history')}>List history</button>
   </div>
 
-  <p class="intro">
-    {#if mode === 'world'}
-      Everything on the list in the order it actually happened, from {groups[0]?.key} until now. Victors show up when they repeated it.
-    {:else}
-      Every change to the list, newest first.
-    {/if}
-  </p>
+  <div class="scrub">
+    <div class="now">
+      <span class="label">{label}</span>
+      <span class="sub">
+        {rows.length} {rows.length === 1 ? 'achievement' : 'achievements'}
+        {#if freshCount}, {freshCount} new{/if}
+      </span>
+    </div>
 
-  {#each groups as g, i (g.key)}
-    {#if gap(i) >= 5}
-      <p class="gap">{gap(i)} years later</p>
+    {#if mode === 'world'}
+      <input type="range" min={firstYear} max={thisYear} bind:value={year} aria-label="Year" />
+      <div class="ends"><span>{firstYear}</span><span>{thisYear}</span></div>
+    {:else if addedDates.length > 1}
+      <input type="range" min="0" max={addedDates.length - 1} bind:value={step} aria-label="Update" />
+      <div class="ends"><span>{formatDate(addedDates[0])}</span><span>{formatDate(addedDates.at(-1))}</span></div>
+    {:else}
+      <p class="sub">Everything so far was added on {formatDate(addedDates[0])}. This fills up as the list grows.</p>
     {/if}
-    <section class="group">
-      <h2>{g.key}</h2>
-      <ol>
-        {#each g.items as e}
-          <li class={e.kind}>
-            <button onclick={() => onjump(e.id)}>
-              <span class="what">
-                {#if e.kind === 'victor'}
-                  <span class="label">Victor</span>
-                {:else if e.kind === 'added'}
-                  <span class="label">Added at #{e.placed}</span>
-                {/if}
-                <span class="title">{e.title}</span>
-                <span class="who">{e.who}</span>
-              </span>
-              <span class="side">
-                {#if mode === 'world'}<span class="date">{formatDate(e.date)}</span>{/if}
-                <span class="rank">#{e.rank}</span>
-              </span>
-            </button>
-          </li>
-        {/each}
-      </ol>
-    </section>
-  {/each}
+  </div>
+
+  {#if rows.length === 0}
+    <p class="empty">Nothing on the list had happened yet.</p>
+  {:else}
+    <ol class="rows">
+      {#each rows as r (r.id)}
+        <li class:fresh={r.fresh}>
+          <button onclick={() => onjump(r.id)}>
+            <span class="at">#{r.at}</span>
+            <span class="what">
+              <span class="title">{r.name}</span>
+              <span class="who">{r.by.join(', ')}, {formatDate(r.date)}</span>
+            </span>
+            <span class="side">
+              {#if r.fresh}<span class="new">New</span>{/if}
+              {#if r.victorsThen}<span>{r.victorsThen.toLocaleString()} {r.victorsThen === 1 ? 'victor' : 'victors'}</span>{/if}
+              {#if rankNow[r.id] !== r.at}<span>#{rankNow[r.id]} now</span>{/if}
+            </span>
+          </button>
+        </li>
+      {/each}
+    </ol>
+  {/if}
 </div>
 
 <style>
@@ -120,53 +116,69 @@
     color: var(--text);
   }
 
-  .intro {
-    margin: 14px 0 24px;
-    color: var(--muted);
-    font-size: 14px;
+  .scrub {
+    position: sticky;
+    top: 68px;
+    z-index: 5;
+    margin: 16px 0 18px;
+    padding: 16px 18px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
   }
 
-  .gap {
-    margin: 0 0 18px 96px;
-    padding-left: 18px;
-    font-size: 12px;
-    color: var(--muted);
-    border-left: 1px dashed var(--border);
-    line-height: 2.5;
+  .now {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
   }
 
-  .group {
-    display: grid;
-    grid-template-columns: 96px 1fr;
-    margin-bottom: 18px;
-  }
-
-  h2 {
-    margin: 0;
-    padding-top: 10px;
+  .label {
     font-family: var(--mono);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 28px;
     color: var(--accent);
+    line-height: 1.1;
   }
 
-  ol {
-    margin: 0;
-    padding: 0 0 0 18px;
-    list-style: none;
-    border-left: 1px solid var(--border);
+  .sub {
+    font-size: 14px;
+    color: var(--muted);
   }
 
-  li + li {
-    margin-top: 8px;
+  input[type='range'] {
+    width: 100%;
+    margin: 14px 0 4px;
+    accent-color: var(--accent);
+    cursor: pointer;
   }
 
-  li button {
-    position: relative;
+  .ends {
     display: flex;
     justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .empty {
+    color: var(--muted);
+  }
+
+  .rows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .rows li + li {
+    margin-top: 6px;
+  }
+
+  .rows button {
+    display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     width: 100%;
     padding: 10px 14px;
     text-align: left;
@@ -175,40 +187,27 @@
     border-radius: var(--radius);
   }
 
-  li button::before {
-    content: '';
-    position: absolute;
-    left: -24px;
-    top: 50%;
-    width: 9px;
-    height: 9px;
-    margin-top: -5px;
-    background: var(--bg);
-    border: 1px solid var(--muted);
-    border-radius: 50%;
-  }
-
-  li.done button::before,
-  li.added button::before {
-    background: var(--accent);
-    border-color: var(--accent);
-  }
-
-  li button:hover {
+  .rows button:hover {
     border-color: var(--muted);
+  }
+
+  .fresh button {
+    border-left: 3px solid var(--accent);
+  }
+
+  .at {
+    width: 40px;
+    flex-shrink: 0;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
   }
 
   .what {
     display: flex;
     flex-direction: column;
+    flex: 1;
     min-width: 0;
-  }
-
-  .label {
-    font-size: 11px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
 
   .title {
@@ -230,17 +229,13 @@
     color: var(--muted);
   }
 
-  @media (max-width: 640px) {
-    .group {
-      grid-template-columns: 1fr;
-    }
+  .new {
+    color: var(--accent);
+  }
 
-    h2 {
-      padding: 0 0 8px;
-    }
-
-    .gap {
-      margin-left: 0;
+  @media (max-width: 860px) {
+    .scrub {
+      top: 63px;
     }
   }
 </style>

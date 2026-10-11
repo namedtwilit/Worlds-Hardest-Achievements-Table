@@ -532,6 +532,248 @@
       "mental"
     ],
     "note": "Played until the game crashed, the only way to \"beat\" it.",
-    "added": "2026-10-11"
+    "added": "2026-10-10"
+  },
+  {
+    "id": "first-powered-flight",
+    "name": "First powered airplane flight",
+    "by": [
+      "Orville Wright",
+      "Wilbur Wright"
+    ],
+    "country": "US",
+    "date": "1903-12-17",
+    "where": "Kitty Hawk, North Carolina",
+    "luck": 3,
+    "grind": 4,
+    "gate": 1e6,
+    "tags": [
+      "first",
+      "team",
+      "mental"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "english-channel-swim",
+    "name": "First swim across the English Channel",
+    "by": [
+      "Matthew Webb"
+    ],
+    "country": "GB",
+    "date": "1875-08-25",
+    "where": "Dover to Calais",
+    "luck": 3,
+    "grind": 2,
+    "gate": 1e5,
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "endurance"
+    ],
+    "victors": [
+      {
+        "name": "Thomas Burgess",
+        "date": "1911-09-06"
+      }
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "south-pole",
+    "name": "First to reach the South Pole",
+    "by": [
+      "Roald Amundsen",
+      "and 4 others"
+    ],
+    "country": "NO",
+    "date": "1911-12-14",
+    "where": "South Pole",
+    "luck": 3,
+    "grind": 3,
+    "gate": 1e6,
+    "tags": [
+      "first",
+      "team",
+      "endurance"
+    ],
+    "victors": [
+      {
+        "name": "Robert Falcon Scott",
+        "date": "1912-01-17",
+        "note": "Died on the way back"
+      }
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "first-human-in-space",
+    "name": "First human in space",
+    "by": [
+      "Yuri Gagarin"
+    ],
+    "country": "RU",
+    "date": "1961-04-12",
+    "where": "Vostok 1",
+    "luck": 5,
+    "grind": 2,
+    "gate": 1e7,
+    "tags": [
+      "first",
+      "solo",
+      "physical"
+    ],
+    "victors": [
+      {
+        "name": "Alan Shepard",
+        "date": "1961-05-05",
+        "note": "Suborbital"
+      },
+      {
+        "name": "Gherman Titov",
+        "date": "1961-08-06"
+      }
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "annapurna",
+    "name": "First ascent of an eight-thousander",
+    "by": [
+      "Maurice Herzog",
+      "Louis Lachenal"
+    ],
+    "country": "FR",
+    "date": "1950-06-03",
+    "where": "Annapurna",
+    "luck": 4,
+    "grind": 3,
+    "gate": 1e6,
+    "tags": [
+      "first",
+      "team",
+      "physical",
+      "endurance"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "everest-solo-no-oxygen",
+    "name": "Everest solo without bottled oxygen",
+    "by": [
+      "Reinhold Messner"
+    ],
+    "country": "IT",
+    "date": "1980-08-20",
+    "where": "Mount Everest",
+    "luck": 6,
+    "grind": 6,
+    "gate": 1e8,
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "endurance",
+      "variant"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "heart-transplant",
+    "name": "First human heart transplant",
+    "by": [
+      "Christiaan Barnard"
+    ],
+    "country": "ZA",
+    "date": "1967-12-03",
+    "where": "Cape Town",
+    "luck": 3,
+    "grind": 15,
+    "gate": 1e7,
+    "tags": [
+      "first",
+      "team",
+      "mental"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "beamon-long-jump",
+    "name": "Long jump of 8.90 m",
+    "by": [
+      "Bob Beamon"
+    ],
+    "country": "US",
+    "date": "1968-10-18",
+    "where": "Mexico City",
+    "luck": 7,
+    "grind": 10,
+    "gate": 1e7,
+    "tags": [
+      "record",
+      "solo",
+      "physical"
+    ],
+    "note": "Stood as the world record for almost 23 years.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "perfect-ten",
+    "name": "First perfect 10 in Olympic gymnastics",
+    "by": [
+      "Nadia Comaneci"
+    ],
+    "country": "RO",
+    "date": "1976-07-18",
+    "where": "Montreal",
+    "luck": 5,
+    "grind": 10,
+    "gate": 1e7,
+    "tags": [
+      "first",
+      "solo",
+      "physical"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "bolt-100m",
+    "name": "100 m in 9.58 seconds",
+    "by": [
+      "Usain Bolt"
+    ],
+    "country": "JM",
+    "date": "2009-08-16",
+    "where": "Berlin",
+    "luck": 5,
+    "grind": 12,
+    "gate": 1e8,
+    "tags": [
+      "record",
+      "solo",
+      "physical"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "balloon-around-world",
+    "name": "First nonstop balloon flight around the world",
+    "by": [
+      "Bertrand Piccard",
+      "Brian Jones"
+    ],
+    "country": "CH, GB",
+    "date": "1999-03-21",
+    "where": "Breitling Orbiter 3",
+    "luck": 4,
+    "grind": 3,
+    "gate": 1e6,
+    "tags": [
+      "first",
+      "team",
+      "endurance"
+    ],
+    "added": "2026-10-10"
   }
 ]
