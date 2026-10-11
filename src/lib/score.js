@@ -1,28 +1,55 @@
-export const weights = {
-  luck: 1,
-  grind: 3,
-  gate: 4
-}
-
 export const sections = [
   { name: 'Main List', from: 1, to: 1000 },
   { name: 'Extended List', from: 1001, to: 2000 },
   { name: 'Legacy List', from: 2001, to: Infinity }
 ]
 
+export const grindAnchors = [
+  [1, 'a day'],
+  [2, 'a week'],
+  [3, 'a month'],
+  [4, '6 months'],
+  [5, 'a year'],
+  [6, '3 years'],
+  [7, '5 years'],
+  [8, '10 years'],
+  [9, '20 years'],
+  [10, 'a lifetime']
+]
+
+export const stakesAnchors = [
+  [1, 'retry in seconds'],
+  [3, 'lose minutes of progress'],
+  [4, 'lose hours, or a big mental hit'],
+  [6, 'lose months, or a lot of money'],
+  [8, 'serious injury'],
+  [10, 'you probably die']
+]
+
+const round1 = (n) => Math.round(n * 10) / 10
+
+export function oddsToScore(n) {
+  return round1(Math.min(10, 1 + Math.log10(Math.max(1, n))))
+}
+
+export function parts(a) {
+  return {
+    luck: oddsToScore(a.odds),
+    grind: a.grind,
+    ceiling: oddsToScore(a.ceiling),
+    stakes: a.stakes
+  }
+}
+
 export function score(a) {
-  return (
-    weights.luck * a.luck +
-    weights.grind * Math.log2(1 + a.grind) +
-    weights.gate * Math.log10(a.gate) +
-    (a.adjust ?? 0)
-  )
+  const p = parts(a)
+  return round1(p.luck + p.grind + p.ceiling + p.stakes + (a.adjust ?? 0))
 }
 
 export function rankAll(list) {
   return [...list]
-    .map((a) => ({ ...a, score: score(a) }))
-    .sort((a, b) => b.score - a.score)
+    .map((a) => ({ ...a, score: score(a), parts: parts(a) }))
+    .sort((a, b) => b.score - a.score || a.date.localeCompare(b.date))
     .map((a, i) => ({ ...a, rank: i + 1 }))
 }
 
@@ -30,17 +57,15 @@ export function sectionOf(rank) {
   return sections.find((s) => rank >= s.from && rank <= s.to)
 }
 
-function plural(n, word) {
-  return `${n} ${n === 1 ? word : word + 's'}`
+function anchorFor(list, v) {
+  return list.reduce((best, cur) => (cur[0] <= v ? cur : best), list[0])[1]
 }
 
-export function formatGrind(years) {
-  if (years < 1 / 12) return plural(Math.max(1, Math.round(years * 365)), 'day')
-  if (years < 1) return plural(Math.round(years * 12), 'month')
-  return plural(+years.toFixed(1), 'year')
-}
+export const describeGrind = (v) => `about ${anchorFor(grindAnchors, v)}`
+export const describeStakes = (v) => anchorFor(stakesAnchors, v)
 
-export function formatGate(n) {
+export function formatOdds(n) {
+  if (n <= 1) return 'no luck needed'
   if (n >= 1e9) return `1 in ${+(n / 1e9).toFixed(1)}B`
   if (n >= 1e6) return `1 in ${+(n / 1e6).toFixed(1)}M`
   if (n >= 1e3) return `1 in ${+(n / 1e3).toFixed(1)}K`
