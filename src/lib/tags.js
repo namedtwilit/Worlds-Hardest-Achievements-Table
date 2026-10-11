@@ -1,4 +1,10 @@
 export const tags = {
+  sport: { label: 'Sport', info: 'Athletics and competitive sports' },
+  exploration: { label: 'Exploration', info: 'Mountains, poles, oceans and the unknown' },
+  survival: { label: 'Survival', info: 'Staying alive when it should not have been possible' },
+  science: { label: 'Science', info: 'Math, medicine, engineering and discovery' },
+  space: { label: 'Space', info: 'Anything off the planet' },
+  game: { label: 'Game', info: 'Done in a video game' },
   first: { label: 'First', info: 'Nobody had done it before' },
   record: { label: 'Record', info: 'Beat an existing best' },
   solo: { label: 'Solo', info: 'Done by one person' },
@@ -7,7 +13,6 @@ export const tags = {
   mental: { label: 'Mental', info: 'Mostly about the mind' },
   endurance: { label: 'Endurance', info: 'Lasted a long time' },
   luck: { label: 'Luck', info: 'Mostly decided by chance' },
-  game: { label: 'Game', info: 'Done in a video game' },
   variant: { label: 'Variant', info: 'A harder or different version of another entry' },
   unofficial: { label: 'Unofficial', info: 'Done, but not under official rules' },
   tentative: { label: 'Tentative', info: 'Placement not settled yet' },

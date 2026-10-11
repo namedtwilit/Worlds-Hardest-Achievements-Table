@@ -15,6 +15,7 @@
     "ceiling": 1e4,
     "stakes": 10,
     "tags": [
+      "space",
       "first",
       "team",
       "physical",
@@ -64,6 +65,7 @@
     "ceiling": 100,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "physical",
       "endurance"
@@ -86,6 +88,7 @@
     "ceiling": 1e4,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "physical",
       "endurance",
@@ -107,6 +110,7 @@
     "ceiling": 1e5,
     "stakes": 10,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical",
@@ -128,6 +132,7 @@
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "science",
       "first",
       "solo",
       "mental"
@@ -148,6 +153,7 @@
     "ceiling": 1e8,
     "stakes": 2,
     "tags": [
+      "science",
       "first",
       "solo",
       "mental"
@@ -170,6 +176,7 @@
     "ceiling": 1e4,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "team",
       "physical",
@@ -192,6 +199,7 @@
     "ceiling": 100,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "team"
     ],
@@ -222,6 +230,7 @@
     "ceiling": 1000,
     "stakes": 6,
     "tags": [
+      "science",
       "first",
       "team",
       "mental"
@@ -242,6 +251,7 @@
     "ceiling": 1e8,
     "stakes": 3,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical",
@@ -265,6 +275,7 @@
     "ceiling": 1e5,
     "stakes": 8,
     "tags": [
+      "space",
       "record",
       "solo",
       "endurance"
@@ -286,6 +297,7 @@
     "ceiling": 1e5,
     "stakes": 2,
     "tags": [
+      "science",
       "first",
       "team",
       "mental"
@@ -306,6 +318,7 @@
     "ceiling": 1e5,
     "stakes": 8,
     "tags": [
+      "space",
       "record",
       "solo",
       "endurance"
@@ -327,6 +340,7 @@
     "ceiling": 10,
     "stakes": 1,
     "tags": [
+      "science",
       "first",
       "solo",
       "mental"
@@ -347,6 +361,7 @@
     "ceiling": 1000,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "solo",
       "endurance"
@@ -367,6 +382,7 @@
     "ceiling": 1e5,
     "stakes": 2,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical"
@@ -393,6 +409,7 @@
     "ceiling": 1000,
     "stakes": 3,
     "tags": [
+      "science",
       "first",
       "team",
       "mental"
@@ -413,6 +430,7 @@
     "ceiling": 1e5,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "solo",
       "physical",
@@ -440,6 +458,7 @@
     "ceiling": 1e5,
     "stakes": 10,
     "tags": [
+      "exploration",
       "record",
       "team",
       "physical",
@@ -462,6 +481,7 @@
     "ceiling": 1000,
     "stakes": 10,
     "tags": [
+      "exploration",
       "record",
       "solo",
       "physical"
@@ -482,6 +502,7 @@
     "ceiling": 1e4,
     "stakes": 7,
     "tags": [
+      "exploration",
       "first",
       "solo",
       "endurance"
@@ -503,6 +524,7 @@
     "ceiling": 1e5,
     "stakes": 6,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical"
@@ -523,6 +545,7 @@
     "ceiling": 100,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "solo",
       "endurance"
@@ -573,6 +596,7 @@
     "ceiling": 1e4,
     "stakes": 8,
     "tags": [
+      "science",
       "first",
       "team",
       "mental"
@@ -593,6 +617,7 @@
     "ceiling": 1000,
     "stakes": 8,
     "tags": [
+      "exploration",
       "first",
       "solo",
       "physical",
@@ -621,6 +646,7 @@
     "ceiling": 1000,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "team",
       "endurance"
@@ -648,6 +674,7 @@
     "ceiling": 1e4,
     "stakes": 10,
     "tags": [
+      "space",
       "first",
       "solo",
       "physical"
@@ -680,6 +707,7 @@
     "ceiling": 1000,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "team",
       "physical",
@@ -701,6 +729,7 @@
     "ceiling": 1e5,
     "stakes": 10,
     "tags": [
+      "exploration",
       "first",
       "solo",
       "physical",
@@ -723,6 +752,7 @@
     "ceiling": 1e4,
     "stakes": 4,
     "tags": [
+      "science",
       "first",
       "team",
       "mental"
@@ -743,6 +773,7 @@
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical"
@@ -764,6 +795,7 @@
     "ceiling": 1e6,
     "stakes": 5,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical"
@@ -784,6 +816,7 @@
     "ceiling": 1e8,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical"
@@ -805,6 +838,7 @@
     "ceiling": 1000,
     "stakes": 9,
     "tags": [
+      "exploration",
       "first",
       "team",
       "endurance"
@@ -849,6 +883,7 @@
     "ceiling": 1e8,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -871,6 +906,7 @@
     "ceiling": 1e8,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -892,6 +928,7 @@
     "ceiling": 1e8,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -913,6 +950,7 @@
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -935,6 +973,7 @@
     "ceiling": 1e7,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -956,6 +995,7 @@
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -978,6 +1018,7 @@
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1000,6 +1041,7 @@
     "ceiling": 1e8,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1022,6 +1064,7 @@
     "ceiling": 1e7,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1044,6 +1087,7 @@
     "ceiling": 1e8,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1063,10 +1107,11 @@
     "date": "2021-05-22",
     "where": "Indianapolis",
     "odds": 10,
-    "grind": 9,
-    "ceiling": 1e8,
+    "grind": 8.5,
+    "ceiling": 1e7,
     "stakes": 8,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical",
@@ -1088,6 +1133,7 @@
     "ceiling": 1e6,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1109,6 +1155,7 @@
     "ceiling": 1e5,
     "stakes": 2,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical",
@@ -1131,6 +1178,7 @@
     "ceiling": 1e5,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1153,6 +1201,7 @@
     "ceiling": 1e5,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "endurance",
@@ -1170,10 +1219,11 @@
     "date": "1982-04",
     "where": "Edmonton",
     "odds": 50,
-    "grind": 9,
+    "grind": 8.5,
     "ceiling": 1e7,
     "stakes": 4,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1191,10 +1241,11 @@
     "date": "2023-09-10",
     "where": "New York",
     "odds": 10,
-    "grind": 10,
+    "grind": 9,
     "ceiling": 1e8,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1213,10 +1264,11 @@
     "date": "2022-06-05",
     "where": "Paris",
     "odds": 20,
-    "grind": 10,
+    "grind": 9,
     "ceiling": 1e8,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1239,6 +1291,7 @@
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "sport",
       "first",
       "solo",
       "physical",
@@ -1261,6 +1314,7 @@
     "ceiling": 1e7,
     "stakes": 1,
     "tags": [
+      "sport",
       "first",
       "solo",
       "mental",
@@ -1282,6 +1336,7 @@
     "ceiling": 1e6,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "team",
       "physical",
@@ -1303,6 +1358,7 @@
     "ceiling": 1e7,
     "stakes": 3,
     "tags": [
+      "sport",
       "record",
       "solo",
       "physical",
@@ -1324,6 +1380,7 @@
     "ceiling": 1000,
     "stakes": 2,
     "tags": [
+      "sport",
       "first",
       "team",
       "luck",
@@ -1346,6 +1403,7 @@
     "ceiling": 1e6,
     "stakes": 1,
     "tags": [
+      "sport",
       "record",
       "solo",
       "mental",
@@ -1367,6 +1425,7 @@
     "ceiling": 1e6,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
       "solo",
       "endurance",
@@ -1384,11 +1443,560 @@
     "date": "2012-03-16",
     "where": "Dhaka",
     "odds": 10,
-    "grind": 10,
+    "grind": 9,
     "ceiling": 1e7,
     "stakes": 2,
     "tags": [
+      "sport",
       "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "first-circumnavigation",
+    "name": "First voyage around the world",
+    "by": [
+      "Ferdinand Magellan",
+      "Juan Sebastián Elcano",
+      "and crew"
+    ],
+    "country": "PT, ES",
+    "date": "1522-09-06",
+    "where": "Sanlúcar de Barrameda, Spain",
+    "odds": 20,
+    "grind": 5,
+    "ceiling": 100,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "note": "About 270 people left. 18 made it back on the one surviving ship.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "northwest-passage",
+    "name": "First ship through the Northwest Passage",
+    "by": [
+      "Roald Amundsen",
+      "and crew"
+    ],
+    "country": "NO",
+    "date": "1906-08-31",
+    "where": "Nome, Alaska",
+    "odds": 5,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "endurance-rescue",
+    "name": "Shackleton getting every man home",
+    "by": [
+      "Ernest Shackleton",
+      "and crew"
+    ],
+    "country": "GB",
+    "date": "1916-08-30",
+    "where": "Elephant Island",
+    "odds": 100,
+    "grind": 5,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "survival",
+      "team",
+      "endurance",
+      "mental",
+      "tentative"
+    ],
+    "note": "Their ship was crushed by ice. All 28 men survived.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "eiger-north-face",
+    "name": "First climb of the Eiger north face",
+    "by": [
+      "Anderl Heckmair",
+      "Ludwig Vörg",
+      "Heinrich Harrer",
+      "Fritz Kasparek"
+    ],
+    "country": "DE, AT",
+    "date": "1938-07-24",
+    "where": "Eiger, Switzerland",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "kon-tiki",
+    "name": "Crossing the Pacific on a wooden raft",
+    "by": [
+      "Thor Heyerdahl",
+      "and crew"
+    ],
+    "country": "NO",
+    "date": "1947-08-07",
+    "where": "Raroia, French Polynesia",
+    "odds": 5,
+    "grind": 4,
+    "ceiling": 100,
+    "stakes": 9,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "nanga-parbat-buhl",
+    "name": "First ascent of Nanga Parbat, solo to the summit",
+    "by": [
+      "Hermann Buhl"
+    ],
+    "country": "AT",
+    "date": "1953-07-03",
+    "where": "Nanga Parbat",
+    "odds": 20,
+    "grind": 7,
+    "ceiling": 1e5,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "k2-first",
+    "name": "First ascent of K2",
+    "by": [
+      "Lino Lacedelli",
+      "Achille Compagnoni"
+    ],
+    "country": "IT",
+    "date": "1954-07-31",
+    "where": "K2",
+    "odds": 5,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "antarctica-overland",
+    "name": "First overland crossing of Antarctica",
+    "by": [
+      "Vivian Fuchs",
+      "and team"
+    ],
+    "country": "GB",
+    "date": "1958-03-02",
+    "where": "Antarctica",
+    "odds": 3,
+    "grind": 5,
+    "ceiling": 1000,
+    "stakes": 9,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "north-pole-on-foot",
+    "name": "First undisputed trip to the North Pole on foot",
+    "by": [
+      "Wally Herbert",
+      "and team"
+    ],
+    "country": "GB",
+    "date": "1969-04-06",
+    "where": "North Pole",
+    "odds": 5,
+    "grind": 6,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "atlantic-solo-row",
+    "name": "First solo row across the Atlantic",
+    "by": [
+      "John Fairfax"
+    ],
+    "country": "GB",
+    "date": "1969-07-19",
+    "where": "Florida",
+    "odds": 10,
+    "grind": 4,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "koepcke",
+    "name": "Surviving a plane breakup and 11 days alone in the jungle",
+    "by": [
+      "Juliane Koepcke"
+    ],
+    "country": "PE",
+    "date": "1972-01-03",
+    "where": "Peruvian Amazon",
+    "odds": 1e4,
+    "grind": 1,
+    "ceiling": 10,
+    "stakes": 10,
+    "tags": [
+      "survival",
+      "solo",
+      "luck",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "vulovic-fall",
+    "name": "Highest fall survived without a parachute",
+    "by": [
+      "Vesna Vulović"
+    ],
+    "country": "RS",
+    "date": "1972-01-26",
+    "where": "Czechoslovakia",
+    "odds": 1e6,
+    "grind": 1,
+    "ceiling": 1,
+    "stakes": 10,
+    "tags": [
+      "survival",
+      "record",
+      "solo",
+      "luck",
+      "tentative"
+    ],
+    "note": "About 10,000 m.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "andes-trek",
+    "name": "Walking out of the Andes after the 1972 crash",
+    "by": [
+      "Nando Parrado",
+      "Roberto Canessa"
+    ],
+    "country": "UY",
+    "date": "1972-12-20",
+    "where": "Andes",
+    "odds": 50,
+    "grind": 2,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "survival",
+      "team",
+      "endurance",
+      "physical",
+      "tentative"
+    ],
+    "note": "Ten days across the mountains with no climbing gear to find help.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "tabei-everest",
+    "name": "First woman to climb Everest",
+    "by": [
+      "Junko Tabei"
+    ],
+    "country": "JP",
+    "date": "1975-05-16",
+    "where": "Mount Everest",
+    "odds": 5,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "everest-winter",
+    "name": "First winter ascent of Everest",
+    "by": [
+      "Krzysztof Wielicki",
+      "Leszek Cichy"
+    ],
+    "country": "PL",
+    "date": "1980-02-17",
+    "where": "Mount Everest",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "transglobe",
+    "name": "Around the world through both poles",
+    "by": [
+      "Ranulph Fiennes",
+      "Charles Burton"
+    ],
+    "country": "GB",
+    "date": "1982-08-29",
+    "where": "Greenwich, London",
+    "odds": 20,
+    "grind": 8,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "seven-summits",
+    "name": "First to climb the Seven Summits",
+    "by": [
+      "Richard Bass"
+    ],
+    "country": "US",
+    "date": "1985-04-30",
+    "where": "Seven continents",
+    "odds": 5,
+    "grind": 5,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "ousland-antarctica",
+    "name": "First solo crossing of Antarctica",
+    "by": [
+      "Børge Ousland"
+    ],
+    "country": "NO",
+    "date": "1997-01",
+    "where": "Antarctica",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 9,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "note": "Used kites to help pull his sled.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "fossett-balloon",
+    "name": "First solo balloon flight around the world",
+    "by": [
+      "Steve Fossett"
+    ],
+    "country": "US",
+    "date": "2002-07-02",
+    "where": "Australia",
+    "odds": 10,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 9,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "hadow-north-pole",
+    "name": "Solo to the North Pole from Canada with no resupply",
+    "by": [
+      "Pen Hadow"
+    ],
+    "country": "GB",
+    "date": "2003-05-19",
+    "where": "North Pole",
+    "odds": 20,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "ralston",
+    "name": "Getting free from a canyon after 5 days trapped",
+    "by": [
+      "Aron Ralston"
+    ],
+    "country": "US",
+    "date": "2003-05-01",
+    "where": "Utah",
+    "odds": 100,
+    "grind": 1,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "survival",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "eustace-jump",
+    "name": "Highest skydive ever",
+    "by": [
+      "Alan Eustace"
+    ],
+    "country": "US",
+    "date": "2014-10-24",
+    "where": "Roswell, New Mexico",
+    "odds": 5,
+    "grind": 4,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "record",
+      "solo",
+      "tentative"
+    ],
+    "note": "About 41,400 m, higher than Felix Baumgartner.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "tham-luang",
+    "name": "Tham Luang cave rescue",
+    "by": [
+      "International rescue team"
+    ],
+    "country": "Global",
+    "date": "2018-07-10",
+    "where": "Chiang Rai, Thailand",
+    "odds": 20,
+    "grind": 5,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "survival",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "note": "Thirteen people brought out through flooded tunnels.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "five-deeps",
+    "name": "Diving to the deepest point of all five oceans",
+    "by": [
+      "Victor Vescovo"
+    ],
+    "country": "US",
+    "date": "2019-08-24",
+    "where": "Five oceans",
+    "odds": 3,
+    "grind": 4,
+    "ceiling": 1000,
+    "stakes": 9,
+    "tags": [
+      "exploration",
+      "first",
       "solo",
       "endurance",
       "tentative"
