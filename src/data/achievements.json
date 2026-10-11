@@ -834,5 +834,565 @@
       "endurance"
     ],
     "added": "2026-10-10"
+  },
+  {
+    "id": "flojo-100m",
+    "name": "100 m in 10.49 seconds",
+    "by": [
+      "Florence Griffith-Joyner"
+    ],
+    "country": "US",
+    "date": "1988-07-16",
+    "where": "Indianapolis",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e8,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "Some people argue the wind gauge was wrong that day.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "flojo-200m",
+    "name": "200 m in 21.34 seconds",
+    "by": [
+      "Florence Griffith-Joyner"
+    ],
+    "country": "US",
+    "date": "1988-09-29",
+    "where": "Seoul",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e8,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "bolt-200m",
+    "name": "200 m in 19.19 seconds",
+    "by": [
+      "Usain Bolt"
+    ],
+    "country": "JM",
+    "date": "2009-08-20",
+    "where": "Berlin",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e8,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "van-niekerk-400m",
+    "name": "400 m in 43.03 seconds",
+    "by": [
+      "Wayde van Niekerk"
+    ],
+    "country": "ZA",
+    "date": "2016-08-14",
+    "where": "Rio de Janeiro",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "Ran it from lane 8, where you cannot see anyone behind you.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "sotomayor-high-jump",
+    "name": "High jump of 2.45 m",
+    "by": [
+      "Javier Sotomayor"
+    ],
+    "country": "CU",
+    "date": "1993-07-27",
+    "where": "Salamanca",
+    "odds": 20,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "powell-long-jump",
+    "name": "Long jump of 8.95 m",
+    "by": [
+      "Mike Powell"
+    ],
+    "country": "US",
+    "date": "1991-08-30",
+    "where": "Tokyo",
+    "odds": 50,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "Broke Bob Beamon's record from 1968.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "el-guerrouj-mile",
+    "name": "Mile in 3:43.13",
+    "by": [
+      "Hicham El Guerrouj"
+    ],
+    "country": "MA",
+    "date": "1999-07-07",
+    "where": "Rome",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "kiptum-marathon",
+    "name": "Official marathon in 2:00:35",
+    "by": [
+      "Kelvin Kiptum"
+    ],
+    "country": "KE",
+    "date": "2023-10-08",
+    "where": "Chicago",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e8,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "radcliffe-marathon",
+    "name": "Marathon in 2:15:25",
+    "by": [
+      "Paula Radcliffe"
+    ],
+    "country": "GB",
+    "date": "2003-04-13",
+    "where": "London",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "phelps-8-golds",
+    "name": "8 gold medals at one Olympics",
+    "by": [
+      "Michael Phelps"
+    ],
+    "country": "US",
+    "date": "2008-08-17",
+    "where": "Beijing",
+    "odds": 20,
+    "grind": 9,
+    "ceiling": 1e8,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "note": "One of the eight was won by 0.01 seconds.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "biles-yurchenko-double-pike",
+    "name": "First Yurchenko double pike vault in competition",
+    "by": [
+      "Simone Biles"
+    ],
+    "country": "US",
+    "date": "2021-05-22",
+    "where": "Indianapolis",
+    "odds": 10,
+    "grind": 9,
+    "ceiling": 1e8,
+    "stakes": 8,
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "chamberlain-100",
+    "name": "100 points in one NBA game",
+    "by": [
+      "Wilt Chamberlain"
+    ],
+    "country": "US",
+    "date": "1962-03-02",
+    "where": "Hershey, Pennsylvania",
+    "odds": 1000,
+    "grind": 8,
+    "ceiling": 1e6,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "larsen-perfect-game",
+    "name": "Perfect game in the World Series",
+    "by": [
+      "Don Larsen"
+    ],
+    "country": "US",
+    "date": "1956-10-08",
+    "where": "New York",
+    "odds": 2000,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 2,
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "luck",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "dimaggio-56",
+    "name": "56 game hitting streak",
+    "by": [
+      "Joe DiMaggio"
+    ],
+    "country": "US",
+    "date": "1941-07-16",
+    "where": "Cleveland",
+    "odds": 5e4,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "luck",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "ripken-streak",
+    "name": "2,632 MLB games in a row",
+    "by": [
+      "Cal Ripken Jr."
+    ],
+    "country": "US",
+    "date": "1998-09-19",
+    "where": "Baltimore",
+    "odds": 100,
+    "grind": 9,
+    "ceiling": 1e5,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "gretzky-92",
+    "name": "92 goals in one NHL season",
+    "by": [
+      "Wayne Gretzky"
+    ],
+    "country": "CA",
+    "date": "1982-04",
+    "where": "Edmonton",
+    "odds": 50,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 4,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "djokovic-24",
+    "name": "24 Grand Slam singles titles",
+    "by": [
+      "Novak Djokovic"
+    ],
+    "country": "RS",
+    "date": "2023-09-10",
+    "where": "New York",
+    "odds": 10,
+    "grind": 10,
+    "ceiling": 1e8,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "nadal-14-roland-garros",
+    "name": "14 French Open titles",
+    "by": [
+      "Rafael Nadal"
+    ],
+    "country": "ES",
+    "date": "2022-06-05",
+    "where": "Paris",
+    "odds": 20,
+    "grind": 10,
+    "ceiling": 1e8,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "graf-golden-slam",
+    "name": "Golden Slam in one year",
+    "by": [
+      "Steffi Graf"
+    ],
+    "country": "DE",
+    "date": "1988-10-01",
+    "where": "Seoul",
+    "odds": 50,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "All four Grand Slams and Olympic gold in the same year.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "tiger-slam",
+    "name": "Holding all four golf majors at once",
+    "by": [
+      "Tiger Woods"
+    ],
+    "country": "US",
+    "date": "2001-04-08",
+    "where": "Augusta, Georgia",
+    "odds": 100,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "pele-3-world-cups",
+    "name": "3 World Cup wins as a player",
+    "by": [
+      "Pelé"
+    ],
+    "country": "BR",
+    "date": "1970-06-21",
+    "where": "Mexico City",
+    "odds": 50,
+    "grind": 8,
+    "ceiling": 1e6,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "team",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "messi-91",
+    "name": "91 goals in one calendar year",
+    "by": [
+      "Lionel Messi"
+    ],
+    "country": "AR",
+    "date": "2012-12",
+    "where": "Spain",
+    "odds": 20,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 3,
+    "tags": [
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "leicester-title",
+    "name": "Leicester City winning the Premier League",
+    "by": [
+      "Leicester City"
+    ],
+    "country": "GB",
+    "date": "2016-05-02",
+    "where": "Leicester, England",
+    "odds": 5000,
+    "grind": 5,
+    "ceiling": 1000,
+    "stakes": 2,
+    "tags": [
+      "first",
+      "team",
+      "luck",
+      "tentative"
+    ],
+    "note": "Bookmakers had them at 5000 to 1 before the season.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "osullivan-fast-147",
+    "name": "147 break in 5 minutes 8 seconds",
+    "by": [
+      "Ronnie O'Sullivan"
+    ],
+    "country": "GB",
+    "date": "1997-04-21",
+    "where": "Sheffield",
+    "odds": 200,
+    "grind": 8,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "lara-400",
+    "name": "400 not out in a Test match",
+    "by": [
+      "Brian Lara"
+    ],
+    "country": "TT",
+    "date": "2004-04-12",
+    "where": "St John's, Antigua",
+    "odds": 500,
+    "grind": 9,
+    "ceiling": 1e6,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "tendulkar-100-centuries",
+    "name": "100 international centuries",
+    "by": [
+      "Sachin Tendulkar"
+    ],
+    "country": "IN",
+    "date": "2012-03-16",
+    "where": "Dhaka",
+    "odds": 10,
+    "grind": 10,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-10"
   }
 ]
