@@ -2002,5 +2002,702 @@
       "tentative"
     ],
     "added": "2026-10-10"
+  },
+  {
+    "id": "galileo-moons",
+    "name": "Discovering the moons of Jupiter",
+    "by": [
+      "Galileo Galilei"
+    ],
+    "country": "IT",
+    "date": "1610-01-07",
+    "where": "Padua",
+    "odds": 3,
+    "grind": 5,
+    "ceiling": 1e5,
+    "stakes": 4,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "principia",
+    "name": "Laws of motion and gravity",
+    "by": [
+      "Isaac Newton"
+    ],
+    "country": "GB",
+    "date": "1687-07-05",
+    "where": "London",
+    "odds": 10,
+    "grind": 9,
+    "ceiling": 1e9,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "note": "Published in the Principia.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "rosetta-stone",
+    "name": "Decoding Egyptian hieroglyphs",
+    "by": [
+      "Jean-François Champollion"
+    ],
+    "country": "FR",
+    "date": "1822-09-27",
+    "where": "Paris",
+    "odds": 3,
+    "grind": 7,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "origin-of-species",
+    "name": "Theory of evolution by natural selection",
+    "by": [
+      "Charles Darwin"
+    ],
+    "country": "GB",
+    "date": "1859-11-24",
+    "where": "London",
+    "odds": 3,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "general-relativity",
+    "name": "General relativity",
+    "by": [
+      "Albert Einstein"
+    ],
+    "country": "DE",
+    "date": "1915-11-25",
+    "where": "Berlin",
+    "odds": 10,
+    "grind": 9,
+    "ceiling": 1e9,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "curie-two-nobels",
+    "name": "Nobel Prizes in two different sciences",
+    "by": [
+      "Marie Curie"
+    ],
+    "country": "PL, FR",
+    "date": "1911-12-10",
+    "where": "Stockholm",
+    "odds": 10,
+    "grind": 9,
+    "ceiling": 1e8,
+    "stakes": 6,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "note": "Physics in 1903, chemistry in 1911. Years of radiation exposure from her work damaged her health.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "penicillin",
+    "name": "Discovering penicillin",
+    "by": [
+      "Alexander Fleming"
+    ],
+    "country": "GB",
+    "date": "1928-09-28",
+    "where": "London",
+    "odds": 1000,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "luck",
+      "tentative"
+    ],
+    "note": "Mold got into a dish he left out while on vacation.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "godel-incompleteness",
+    "name": "Incompleteness theorems",
+    "by": [
+      "Kurt Gödel"
+    ],
+    "country": "AT",
+    "date": "1931",
+    "where": "Vienna",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e8,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "dna-structure",
+    "name": "Structure of DNA",
+    "by": [
+      "James Watson",
+      "Francis Crick",
+      "Rosalind Franklin"
+    ],
+    "country": "GB, US",
+    "date": "1953-04-25",
+    "where": "Cambridge, England",
+    "odds": 5,
+    "grind": 7,
+    "ceiling": 1e6,
+    "stakes": 2,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "linear-b",
+    "name": "Decoding Linear B",
+    "by": [
+      "Michael Ventris"
+    ],
+    "country": "GB",
+    "date": "1952-07-01",
+    "where": "London",
+    "odds": 3,
+    "grind": 7,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "kidney-transplant",
+    "name": "First successful organ transplant",
+    "by": [
+      "Joseph Murray",
+      "and team"
+    ],
+    "country": "US",
+    "date": "1954-12-23",
+    "where": "Boston",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e4,
+    "stakes": 4,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "polio-vaccine",
+    "name": "Polio vaccine",
+    "by": [
+      "Jonas Salk",
+      "and team"
+    ],
+    "country": "US",
+    "date": "1955-04-12",
+    "where": "Ann Arbor, Michigan",
+    "odds": 3,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 4,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "four-color-theorem",
+    "name": "Proof of the four color theorem",
+    "by": [
+      "Kenneth Appel",
+      "Wolfgang Haken"
+    ],
+    "country": "US",
+    "date": "1976",
+    "where": "Urbana, Illinois",
+    "odds": 3,
+    "grind": 6,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "note": "First major proof that needed a computer.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "ivf",
+    "name": "First baby born through IVF",
+    "by": [
+      "Robert Edwards",
+      "Patrick Steptoe"
+    ],
+    "country": "GB",
+    "date": "1978-07-25",
+    "where": "Oldham, England",
+    "odds": 20,
+    "grind": 9,
+    "ceiling": 1e5,
+    "stakes": 4,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "higgs-boson",
+    "name": "Finding the Higgs boson",
+    "by": [
+      "CERN"
+    ],
+    "country": "Global",
+    "date": "2012-07-04",
+    "where": "Geneva",
+    "odds": 3,
+    "grind": 10,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "mirzakhani-fields",
+    "name": "First woman to win the Fields Medal",
+    "by": [
+      "Maryam Mirzakhani"
+    ],
+    "country": "IR",
+    "date": "2014-08-13",
+    "where": "Seoul",
+    "odds": 3,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "science",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "gravitational-waves",
+    "name": "First detection of gravitational waves",
+    "by": [
+      "LIGO"
+    ],
+    "country": "US",
+    "date": "2015-09-14",
+    "where": "Louisiana and Washington",
+    "odds": 3,
+    "grind": 10,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "science",
+      "first",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "note": "The signal moved the detector mirrors less than the width of a proton.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "sputnik",
+    "name": "First satellite in orbit",
+    "by": [
+      "Soviet space program"
+    ],
+    "country": "RU",
+    "date": "1957-10-04",
+    "where": "Baikonur",
+    "odds": 3,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 3,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "tereshkova",
+    "name": "First woman in space",
+    "by": [
+      "Valentina Tereshkova"
+    ],
+    "country": "RU",
+    "date": "1963-06-16",
+    "where": "Vostok 6",
+    "odds": 2,
+    "grind": 4,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "space",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "leonov-spacewalk",
+    "name": "First spacewalk",
+    "by": [
+      "Alexei Leonov"
+    ],
+    "country": "RU",
+    "date": "1965-03-18",
+    "where": "Voskhod 2",
+    "odds": 10,
+    "grind": 5,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "space",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "His suit swelled up and he had to let air out of it to fit back inside.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "apollo-8",
+    "name": "First crew to orbit the Moon",
+    "by": [
+      "Frank Borman",
+      "Jim Lovell",
+      "William Anders"
+    ],
+    "country": "US",
+    "date": "1968-12-24",
+    "where": "Moon orbit",
+    "odds": 3,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "apollo-13",
+    "name": "Bringing Apollo 13 home",
+    "by": [
+      "Jim Lovell",
+      "Jack Swigert",
+      "Fred Haise",
+      "and Mission Control"
+    ],
+    "country": "US",
+    "date": "1970-04-17",
+    "where": "Pacific Ocean",
+    "odds": 100,
+    "grind": 6,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "space",
+      "survival",
+      "team",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "mccandless-untethered",
+    "name": "First untethered spacewalk",
+    "by": [
+      "Bruce McCandless"
+    ],
+    "country": "US",
+    "date": "1984-02-07",
+    "where": "Space Shuttle Challenger",
+    "odds": 5,
+    "grind": 6,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "space",
+      "first",
+      "solo",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "hubble-repair",
+    "name": "Fixing Hubble in orbit",
+    "by": [
+      "STS-61 crew"
+    ],
+    "country": "US",
+    "date": "1993-12-13",
+    "where": "Earth orbit",
+    "odds": 5,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 9,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "physical",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "voyager-interstellar",
+    "name": "First spacecraft in interstellar space",
+    "by": [
+      "Voyager 1 team"
+    ],
+    "country": "US",
+    "date": "2012-08-25",
+    "where": "Interstellar space",
+    "odds": 10,
+    "grind": 9,
+    "ceiling": 1000,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "endurance",
+      "tentative"
+    ],
+    "note": "35 years after launch.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "curiosity-landing",
+    "name": "Landing Curiosity on Mars with a sky crane",
+    "by": [
+      "NASA JPL"
+    ],
+    "country": "US",
+    "date": "2012-08-06",
+    "where": "Gale Crater, Mars",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "philae-comet",
+    "name": "First landing on a comet",
+    "by": [
+      "European Space Agency"
+    ],
+    "country": "Global",
+    "date": "2014-11-12",
+    "where": "Comet 67P",
+    "odds": 50,
+    "grind": 9,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "luck",
+      "tentative"
+    ],
+    "note": "It bounced twice before stopping.",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "new-horizons-pluto",
+    "name": "First flyby of Pluto",
+    "by": [
+      "New Horizons team"
+    ],
+    "country": "US",
+    "date": "2015-07-14",
+    "where": "Pluto",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "falcon-9-landing",
+    "name": "First orbital rocket booster landing",
+    "by": [
+      "SpaceX"
+    ],
+    "country": "US",
+    "date": "2015-12-21",
+    "where": "Cape Canaveral",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "change-4",
+    "name": "First landing on the far side of the Moon",
+    "by": [
+      "China National Space Administration"
+    ],
+    "country": "CN",
+    "date": "2019-01-03",
+    "where": "Far side of the Moon",
+    "odds": 3,
+    "grind": 6,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "tentative"
+    ],
+    "added": "2026-10-10"
+  },
+  {
+    "id": "jwst-deploy",
+    "name": "Unfolding the James Webb Space Telescope",
+    "by": [
+      "NASA",
+      "ESA",
+      "CSA"
+    ],
+    "country": "Global",
+    "date": "2022-01-08",
+    "where": "1.5 million km from Earth",
+    "odds": 50,
+    "grind": 9,
+    "ceiling": 1e4,
+    "stakes": 2,
+    "tags": [
+      "space",
+      "first",
+      "team",
+      "luck",
+      "tentative"
+    ],
+    "note": "Hundreds of parts that each had to work the first time.",
+    "added": "2026-10-10"
   }
 ]
