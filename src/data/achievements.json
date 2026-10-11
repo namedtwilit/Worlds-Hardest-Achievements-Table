@@ -775,5 +775,18 @@
       "endurance"
     ],
     "added": "2026-10-10"
+  },
+  {
+    "id": "grief-verified",
+    "name": "Geometry Dash Level - Grief Verified",
+    "by": ["Michael Materazo"],
+    "country": "US",
+    "date": "2026-10-04",
+    "where": "New York",
+    "luck": 18,
+    "grind": 2,
+    "gate": 2.666666666e9,
+    "tags": ["first", "record", "solo", "mental", "physical", "game", "endurance"],
+    "added": "2026-10-10"
   }
 ]
