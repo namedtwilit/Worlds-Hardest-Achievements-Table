@@ -2699,5 +2699,37 @@
     ],
     "note": "Hundreds of parts that each had to work the first time.",
     "added": "2026-10-10"
+  },
+  {
+    "id": "osu-mania-eta-dan",
+    "name": "First clear of the osu!mania 4K Eta dan",
+    "by": [
+      "Saragi"
+    ],
+    "country": "",
+    "date": "2024-12",
+    "where": "Online",
+    "odds": 100,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 3,
+    "tags": [
+      "game",
+      "first",
+      "solo",
+      "physical",
+      "mental",
+      "endurance",
+      "tentative"
+    ],
+    "note": "Four songs back to back, and the whole course needs 96% accuracy or higher to count. Nobody knows the attempt count, so Luck is a guess.",
+    "victors": [
+      {
+        "name": "myucchii (Myuka)",
+        "date": "2026-10-10",
+        "note": "96.27%"
+      }
+    ],
+    "added": "2026-10-22"
   }
 ]
