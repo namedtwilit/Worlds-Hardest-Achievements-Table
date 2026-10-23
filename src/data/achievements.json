@@ -3328,5 +3328,318 @@
     ],
     "note": "Age 15, breaking Bobby Fischer's record.",
     "added": "2026-10-23"
+  },
+  {
+    "id": "zemdegs-sub-6",
+    "name": "First Rubik's cube solve under 6 seconds",
+    "by": [
+      "Feliks Zemdegs"
+    ],
+    "country": "AU",
+    "date": "2011-06",
+    "where": "Melbourne",
+    "odds": 20,
+    "grind": 6,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "5.66 seconds.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "park-313",
+    "name": "Rubik's cube in 3.13 seconds",
+    "by": [
+      "Max Park"
+    ],
+    "country": "US",
+    "date": "2023-06-11",
+    "where": "Long Beach, California",
+    "odds": 1000,
+    "grind": 7,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "physical",
+      "luck",
+      "tentative"
+    ],
+    "note": "A good scramble helps a lot at this level, so luck plays a real part.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "meena-pi",
+    "name": "Reciting 70,000 digits of pi",
+    "by": [
+      "Rajveer Meena"
+    ],
+    "country": "IN",
+    "date": "2015-03-21",
+    "where": "Vellore, India",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e5,
+    "stakes": 4,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "note": "Took about 10 hours, blindfolded the whole time.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "haraguchi-pi",
+    "name": "Reciting 100,000 digits of pi",
+    "by": [
+      "Akira Haraguchi"
+    ],
+    "country": "JP",
+    "date": "2006-10-04",
+    "where": "Chiba, Japan",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e6,
+    "stakes": 4,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "endurance",
+      "unofficial",
+      "tentative"
+    ],
+    "note": "Took about 16 hours. Never ratified by Guinness.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "obrien-54-decks",
+    "name": "Memorizing 54 shuffled decks of cards in a row",
+    "by": [
+      "Dominic O'Brien"
+    ],
+    "country": "GB",
+    "date": "2002-05-01",
+    "where": "London",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e5,
+    "stakes": 3,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "tentative"
+    ],
+    "note": "2,808 cards after seeing each one once, with only 8 mistakes.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "carlsen-125-unbeaten",
+    "name": "125 classical chess games in a row without losing",
+    "by": [
+      "Magnus Carlsen"
+    ],
+    "country": "NO",
+    "date": "2020-10-10",
+    "where": "Stavanger, Norway",
+    "odds": 100,
+    "grind": 9,
+    "ceiling": 1e8,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "note": "Ended by Jan-Krzysztof Duda.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "carlsen-triple-crown",
+    "name": "World champion in classical, rapid and blitz at once",
+    "by": [
+      "Magnus Carlsen"
+    ],
+    "country": "NO",
+    "date": "2014-06",
+    "where": "Dubai",
+    "odds": 10,
+    "grind": 9,
+    "ceiling": 1e8,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "mishra-youngest-gm",
+    "name": "Youngest chess grandmaster ever",
+    "by": [
+      "Abhimanyu Mishra"
+    ],
+    "country": "US",
+    "date": "2021-06-30",
+    "where": "Budapest",
+    "odds": 3,
+    "grind": 6,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "tentative"
+    ],
+    "note": "Age 12 years, 4 months and 25 days.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "fischer-1972",
+    "name": "Winning the 1972 World Chess Championship",
+    "by": [
+      "Bobby Fischer"
+    ],
+    "country": "US",
+    "date": "1972-09-01",
+    "where": "Reykjavík",
+    "odds": 5,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "tentative"
+    ],
+    "note": "Ended 24 years of Soviet champions.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "kasparov-deep-blue-1996",
+    "name": "Beating Deep Blue in a match",
+    "by": [
+      "Garry Kasparov"
+    ],
+    "country": "RU",
+    "date": "1996-02-17",
+    "where": "Philadelphia",
+    "odds": 3,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "mind",
+      "solo",
+      "tentative"
+    ],
+    "note": "Won 4 to 2. Deep Blue won the rematch a year later.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "richards-french-scrabble",
+    "name": "Winning the French Scrabble championship without speaking French",
+    "by": [
+      "Nigel Richards"
+    ],
+    "country": "NZ",
+    "date": "2015-07-20",
+    "where": "Louvain-la-Neuve, Belgium",
+    "odds": 10,
+    "grind": 5,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "tentative"
+    ],
+    "note": "Memorized the French word list in about 9 weeks.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "holzhauer-131k",
+    "name": "$131,127 in one Jeopardy! game",
+    "by": [
+      "James Holzhauer"
+    ],
+    "country": "US",
+    "date": "2019-04-17",
+    "where": "Culver City, California",
+    "odds": 50,
+    "grind": 6,
+    "ceiling": 1e5,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "moneymaker-wsop",
+    "name": "Amateur winning the World Series of Poker Main Event",
+    "by": [
+      "Chris Moneymaker"
+    ],
+    "country": "US",
+    "date": "2003-05-23",
+    "where": "Las Vegas",
+    "odds": 1e4,
+    "grind": 3,
+    "ceiling": 10,
+    "stakes": 2,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "luck",
+      "tentative"
+    ],
+    "note": "Qualified through an $86 online satellite.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "habu-seven-titles",
+    "name": "Holding all seven major shogi titles at once",
+    "by": [
+      "Yoshiharu Habu"
+    ],
+    "country": "JP",
+    "date": "1996-02-14",
+    "where": "Japan",
+    "odds": 50,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-23"
   }
 ]
