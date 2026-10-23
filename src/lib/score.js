@@ -49,10 +49,14 @@ export function score(a) {
   return round1(p.luck + p.grind + p.ceiling + p.stakes * stakesWeight + (a.adjust ?? 0))
 }
 
+export function byRank(a, b) {
+  return b.score - a.score || a.date.localeCompare(b.date) || a.id.localeCompare(b.id)
+}
+
 export function rankAll(list) {
   return [...list]
     .map((a) => ({ ...a, score: score(a), parts: parts(a) }))
-    .sort((a, b) => b.score - a.score || a.date.localeCompare(b.date))
+    .sort(byRank)
     .map((a, i) => ({ ...a, rank: i + 1 }))
 }
 

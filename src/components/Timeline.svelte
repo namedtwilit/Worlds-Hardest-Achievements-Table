@@ -1,5 +1,5 @@
 <script>
-  import { score, formatDate } from '../lib/score.js'
+  import { score, byRank, formatDate } from '../lib/score.js'
   import { credit } from '../lib/names.js'
   import { toUnix, formatMoment, shift } from '../lib/time.js'
 
@@ -70,7 +70,7 @@
   let rows = $derived(
     scored
       .filter(happened)
-      .sort((x, y) => y.score - x.score)
+      .sort(byRank)
       .map((a, i) => ({ ...a, place: i + 1, fresh: isNew(a), victorsThen: victorsBy(a) }))
   )
 
