@@ -5,6 +5,8 @@ export const tags = {
   science: { label: 'Science', info: 'Math, medicine, engineering and discovery' },
   space: { label: 'Space', info: 'Anything off the planet' },
   game: { label: 'Game', info: 'Done in a video game' },
+  mind: { label: 'Mind', info: 'Chess, memory, quizzes and mental math' },
+  stunt: { label: 'Stunt', info: 'Daredevil feats done on purpose' },
   first: { label: 'First', info: 'Nobody had done it before' },
   record: { label: 'Record', info: 'Beat an existing best' },
   solo: { label: 'Solo', info: 'Done by one person' },

@@ -2781,5 +2781,552 @@
     ],
     "note": "The hardest tower ever beaten in the tower obby community, Mid Unreal at about 13.5. Made by IceNsalt and 7Zakki1. Runs take 30 to 45 minutes or more.",
     "added": "2026-10-23"
+  },
+  {
+    "id": "barkley-first-finish",
+    "name": "First finish of the Barkley Marathons",
+    "by": [
+      "Mark Williams"
+    ],
+    "country": "GB",
+    "date": "1995",
+    "where": "Frozen Head State Park, Tennessee",
+    "odds": 20,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 6,
+    "tags": [
+      "sport",
+      "first",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "note": "Five loops of about 20 miles each through the woods with no marked trail, in under 60 hours.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "barkley-jasmin-paris",
+    "name": "First woman to finish the Barkley Marathons",
+    "by": [
+      "Jasmin Paris"
+    ],
+    "country": "GB",
+    "date": "2024-03-22",
+    "where": "Frozen Head State Park, Tennessee",
+    "odds": 20,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 6,
+    "tags": [
+      "sport",
+      "first",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "note": "Finished with 99 seconds to spare.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "kouros-spartathlon",
+    "name": "Spartathlon in 20 hours 25 minutes",
+    "by": [
+      "Yiannis Kouros"
+    ],
+    "country": "GR",
+    "date": "1984",
+    "where": "Athens to Sparta",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 5,
+    "tags": [
+      "sport",
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "note": "246 km, and the record held for decades.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "nyad-cuba-florida",
+    "name": "Swimming from Cuba to Florida",
+    "by": [
+      "Diana Nyad"
+    ],
+    "country": "US",
+    "date": "2013-09-02",
+    "where": "Havana to Key West",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 9,
+    "tags": [
+      "sport",
+      "solo",
+      "endurance",
+      "disputed",
+      "tentative"
+    ],
+    "note": "Done at age 64 on her fifth try. Parts of the swim were never independently verified.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "pugh-north-pole-swim",
+    "name": "Swimming 1 km at the North Pole",
+    "by": [
+      "Lewis Pugh"
+    ],
+    "country": "GB",
+    "date": "2007-07-15",
+    "where": "North Pole",
+    "odds": 5,
+    "grind": 6,
+    "ceiling": 1e5,
+    "stakes": 9,
+    "tags": [
+      "sport",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "In water below 0 degrees, in just a swimsuit.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "jornet-everest-twice",
+    "name": "Everest twice in one week without bottled oxygen",
+    "by": [
+      "Kílian Jornet"
+    ],
+    "country": "ES",
+    "date": "2017-05",
+    "where": "Mount Everest",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 10,
+    "tags": [
+      "exploration",
+      "record",
+      "solo",
+      "physical",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "karnazes-50-50-50",
+    "name": "50 marathons in 50 states in 50 days",
+    "by": [
+      "Dean Karnazes"
+    ],
+    "country": "US",
+    "date": "2006-11-05",
+    "where": "United States",
+    "odds": 2,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 4,
+    "tags": [
+      "sport",
+      "first",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "beaumont-80-days",
+    "name": "Cycling around the world in 80 days",
+    "by": [
+      "Mark Beaumont"
+    ],
+    "country": "GB",
+    "date": "2017-09-18",
+    "where": "Paris",
+    "odds": 3,
+    "grind": 6,
+    "ceiling": 1e4,
+    "stakes": 6,
+    "tags": [
+      "sport",
+      "record",
+      "solo",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "petit-twin-towers",
+    "name": "Tightrope walk between the Twin Towers",
+    "by": [
+      "Philippe Petit"
+    ],
+    "country": "FR",
+    "date": "1974-08-07",
+    "where": "New York",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e4,
+    "stakes": 10,
+    "tags": [
+      "stunt",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "No net and no harness, more than 400 m up.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "wallenda-niagara",
+    "name": "Tightrope walk over Niagara Falls",
+    "by": [
+      "Nik Wallenda"
+    ],
+    "country": "US",
+    "date": "2012-06-15",
+    "where": "Niagara Falls",
+    "odds": 3,
+    "grind": 8,
+    "ceiling": 1e4,
+    "stakes": 7,
+    "tags": [
+      "stunt",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "The TV network made him wear a tether.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "robert-burj-khalifa",
+    "name": "Climbing the outside of the Burj Khalifa",
+    "by": [
+      "Alain Robert"
+    ],
+    "country": "FR",
+    "date": "2011-03-28",
+    "where": "Dubai",
+    "odds": 3,
+    "grind": 8,
+    "ceiling": 1e4,
+    "stakes": 6,
+    "tags": [
+      "stunt",
+      "first",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "Used a rope for safety this time. He is known for free soloing buildings.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "connery-wingsuit-landing",
+    "name": "Landing a wingsuit jump without a parachute",
+    "by": [
+      "Gary Connery"
+    ],
+    "country": "GB",
+    "date": "2012-05-23",
+    "where": "Henley-on-Thames, England",
+    "odds": 10,
+    "grind": 6,
+    "ceiling": 1000,
+    "stakes": 10,
+    "tags": [
+      "stunt",
+      "first",
+      "solo",
+      "tentative"
+    ],
+    "note": "Landed on a runway of cardboard boxes.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "aikins-no-parachute",
+    "name": "Skydive from 7,600 m with no parachute",
+    "by": [
+      "Luke Aikins"
+    ],
+    "country": "US",
+    "date": "2016-07-30",
+    "where": "Simi Valley, California",
+    "odds": 10,
+    "grind": 5,
+    "ceiling": 100,
+    "stakes": 10,
+    "tags": [
+      "stunt",
+      "first",
+      "solo",
+      "tentative"
+    ],
+    "note": "Landed in a net.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "sobat-breath-hold",
+    "name": "Holding your breath for 24 minutes 37 seconds",
+    "by": [
+      "Budimir Šobat"
+    ],
+    "country": "HR",
+    "date": "2021-03-27",
+    "where": "Sisak, Croatia",
+    "odds": 3,
+    "grind": 7,
+    "ceiling": 1e5,
+    "stakes": 8,
+    "tags": [
+      "stunt",
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "Breathed pure oxygen beforehand, which is allowed for this record.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "nitsch-214m",
+    "name": "Freediving to 214 m on one breath",
+    "by": [
+      "Herbert Nitsch"
+    ],
+    "country": "AT",
+    "date": "2007-06-14",
+    "where": "Spetses, Greece",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e5,
+    "stakes": 10,
+    "tags": [
+      "stunt",
+      "record",
+      "solo",
+      "physical",
+      "tentative"
+    ],
+    "note": "No limits freediving, using a weighted sled to go down.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "carlsen-2882",
+    "name": "Highest chess rating ever, 2882",
+    "by": [
+      "Magnus Carlsen"
+    ],
+    "country": "NO",
+    "date": "2014-05",
+    "where": "Worldwide",
+    "odds": 3,
+    "grind": 9,
+    "ceiling": 1e8,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "fischer-two-6-0",
+    "name": "Winning two Candidates matches 6 to 0",
+    "by": [
+      "Bobby Fischer"
+    ],
+    "country": "US",
+    "date": "1971-07",
+    "where": "Vancouver and Denver",
+    "odds": 50,
+    "grind": 9,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "mind",
+      "first",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "note": "Swept Taimanov and Larsen, both top players, without a single draw.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "kasparov-youngest",
+    "name": "Youngest undisputed world chess champion",
+    "by": [
+      "Garry Kasparov"
+    ],
+    "country": "SU",
+    "date": "1985-11-09",
+    "where": "Moscow",
+    "odds": 5,
+    "grind": 8,
+    "ceiling": 1e7,
+    "stakes": 2,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "note": "Age 22.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "gareyev-48-blindfold",
+    "name": "48 chess games at once while blindfolded",
+    "by": [
+      "Timur Gareyev"
+    ],
+    "country": "UZ, US",
+    "date": "2016-12-04",
+    "where": "Las Vegas",
+    "odds": 10,
+    "grind": 8,
+    "ceiling": 1e6,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "jennings-74",
+    "name": "74 Jeopardy! wins in a row",
+    "by": [
+      "Ken Jennings"
+    ],
+    "country": "US",
+    "date": "2004-11-30",
+    "where": "Culver City, California",
+    "odds": 100,
+    "grind": 6,
+    "ceiling": 1e5,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "devi-13-digit",
+    "name": "Multiplying two 13 digit numbers in 28 seconds",
+    "by": [
+      "Shakuntala Devi"
+    ],
+    "country": "IN",
+    "date": "1980-06-18",
+    "where": "London",
+    "odds": 10,
+    "grind": 7,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "lee-sedol-alphago",
+    "name": "The only human win against AlphaGo in a match",
+    "by": [
+      "Lee Sedol"
+    ],
+    "country": "KR",
+    "date": "2016-03-13",
+    "where": "Seoul",
+    "odds": 100,
+    "grind": 9,
+    "ceiling": 1e6,
+    "stakes": 2,
+    "tags": [
+      "mind",
+      "solo",
+      "mental",
+      "luck",
+      "tentative"
+    ],
+    "note": "Game 4 of 5. AlphaGo won the other four.",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "tinsley-checkers",
+    "name": "Losing only 7 checkers games in 45 years",
+    "by": [
+      "Marion Tinsley"
+    ],
+    "country": "US",
+    "date": "1994",
+    "where": "Worldwide",
+    "odds": 5,
+    "grind": 10,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "endurance",
+      "tentative"
+    ],
+    "added": "2026-10-23"
+  },
+  {
+    "id": "polgar-youngest-gm",
+    "name": "Youngest chess grandmaster at the time",
+    "by": [
+      "Judit Polgár"
+    ],
+    "country": "HU",
+    "date": "1991-12",
+    "where": "Budapest",
+    "odds": 3,
+    "grind": 7,
+    "ceiling": 1e7,
+    "stakes": 1,
+    "tags": [
+      "mind",
+      "record",
+      "solo",
+      "mental",
+      "tentative"
+    ],
+    "note": "Age 15, breaking Bobby Fischer's record.",
+    "added": "2026-10-23"
   }
 ]
