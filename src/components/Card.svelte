@@ -1,5 +1,6 @@
 <script>
   import { tags } from '../lib/tags.js'
+  import { othersText } from '../lib/names.js'
   import { formatDate, formatOdds, describeGrind, describeStakes, stakesWeight, maxScore } from '../lib/score.js'
 
   let { a } = $props()
@@ -14,6 +15,9 @@
     return `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`
   }
 
+  let rest = $derived(othersText(a.others))
+  let lead = $derived(rest ? a.by.join(', ') : joinNames(a.by))
+
   function onKey(e) {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault()
@@ -26,7 +30,7 @@
   <div class="body" role="button" tabindex="0" aria-expanded={open} onclick={() => (open = !open)} onkeydown={onKey}>
     <span class="rank {medal}">#{a.rank}</span>
     <h3>{a.name}</h3>
-    <p class="by">by <span>{joinNames(a.by)}</span> <span class="country">{a.country}</span></p>
+    <p class="by">by <span>{lead}</span>{#if rest} and {rest}{/if} <span class="country">{a.country}</span></p>
 
     <dl class="stats">
       <div><dt>Date</dt><dd>{formatDate(a.date)}</dd></div>
@@ -66,7 +70,7 @@
       <ul class="why">
         <li><span>Luck {a.parts.luck}</span>{formatOdds(a.odds)} on the run that counted</li>
         <li><span>Grind {a.parts.grind}</span>{describeGrind(a.parts.grind)} from zero</li>
-        <li><span>Ceiling {a.parts.ceiling}</span>{a.ceiling <= 1 ? 'almost anyone could' : `${formatOdds(a.ceiling)} people could ever do it`}</li>
+        <li><span>Ceiling {a.parts.ceiling}</span>{a.ceiling < 10 ? 'almost anyone has the body for it' : `${formatOdds(a.ceiling)} people have the body for it`}</li>
         <li><span>Stakes {a.parts.stakes}</span>failing means {describeStakes(a.parts.stakes)}, counts {stakesWeight === 0.5 ? 'half' : `x${stakesWeight}`}</li>
       </ul>
 

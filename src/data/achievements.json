@@ -165,9 +165,9 @@
     "name": "First winter ascent of K2",
     "by": [
       "Nirmal Purja",
-      "Mingma Gyalje Sherpa",
-      "and 8 others"
+      "Mingma Gyalje Sherpa"
     ],
+    "others": 8,
     "country": "NP",
     "date": "2021-01-16",
     "where": "K2",
@@ -635,9 +635,9 @@
     "id": "south-pole",
     "name": "First to reach the South Pole",
     "by": [
-      "Roald Amundsen",
-      "and 4 others"
+      "Roald Amundsen"
     ],
+    "others": 4,
     "country": "NO",
     "date": "1911-12-14",
     "where": "South Pole",
@@ -1460,9 +1460,9 @@
     "name": "First voyage around the world",
     "by": [
       "Ferdinand Magellan",
-      "Juan Sebastián Elcano",
-      "and crew"
+      "Juan Sebastián Elcano"
     ],
+    "others": "crew",
     "country": "PT, ES",
     "date": "1522-09-06",
     "where": "Sanlúcar de Barrameda, Spain",
@@ -1484,9 +1484,9 @@
     "id": "northwest-passage",
     "name": "First ship through the Northwest Passage",
     "by": [
-      "Roald Amundsen",
-      "and crew"
+      "Roald Amundsen"
     ],
+    "others": "crew",
     "country": "NO",
     "date": "1906-08-31",
     "where": "Nome, Alaska",
@@ -1507,9 +1507,9 @@
     "id": "endurance-rescue",
     "name": "Shackleton getting every man home",
     "by": [
-      "Ernest Shackleton",
-      "and crew"
+      "Ernest Shackleton"
     ],
+    "others": "crew",
     "country": "GB",
     "date": "1916-08-30",
     "where": "Elephant Island",
@@ -1556,9 +1556,9 @@
     "id": "kon-tiki",
     "name": "Crossing the Pacific on a wooden raft",
     "by": [
-      "Thor Heyerdahl",
-      "and crew"
+      "Thor Heyerdahl"
     ],
+    "others": "crew",
     "country": "NO",
     "date": "1947-08-07",
     "where": "Raroia, French Polynesia",
@@ -1625,9 +1625,9 @@
     "id": "antarctica-overland",
     "name": "First overland crossing of Antarctica",
     "by": [
-      "Vivian Fuchs",
-      "and team"
+      "Vivian Fuchs"
     ],
+    "others": "team",
     "country": "GB",
     "date": "1958-03-02",
     "where": "Antarctica",
@@ -1648,9 +1648,9 @@
     "id": "north-pole-on-foot",
     "name": "First undisputed trip to the North Pole on foot",
     "by": [
-      "Wally Herbert",
-      "and team"
+      "Wally Herbert"
     ],
+    "others": "team",
     "country": "GB",
     "date": "1969-04-06",
     "where": "North Pole",
@@ -2232,9 +2232,9 @@
     "id": "kidney-transplant",
     "name": "First successful organ transplant",
     "by": [
-      "Joseph Murray",
-      "and team"
+      "Joseph Murray"
     ],
+    "others": "team",
     "country": "US",
     "date": "1954-12-23",
     "where": "Boston",
@@ -2255,9 +2255,9 @@
     "id": "polio-vaccine",
     "name": "Polio vaccine",
     "by": [
-      "Jonas Salk",
-      "and team"
+      "Jonas Salk"
     ],
+    "others": "team",
     "country": "US",
     "date": "1955-04-12",
     "where": "Ann Arbor, Michigan",
@@ -2483,9 +2483,9 @@
     "by": [
       "Jim Lovell",
       "Jack Swigert",
-      "Fred Haise",
-      "and Mission Control"
+      "Fred Haise"
     ],
+    "others": "Mission Control",
     "country": "US",
     "date": "1970-04-17",
     "where": "Pacific Ocean",

@@ -1,6 +1,7 @@
 <script>
   import data from './data/achievements.json'
   import { rankAll, sectionOf } from './lib/score.js'
+  import { credit } from './lib/names.js'
   import Card from './components/Card.svelte'
   import Panel from './components/Panel.svelte'
   import Timeline from './components/Timeline.svelte'
@@ -49,7 +50,7 @@
       if (!q) return true
       return (
         a.name.toLowerCase().includes(q) ||
-        a.by.some((p) => p.toLowerCase().includes(q)) ||
+        credit(a).toLowerCase().includes(q) ||
         a.where.toLowerCase().includes(q)
       )
     })

@@ -6,7 +6,7 @@ Worlds Hardest Achievements Table. A ranked list of the hardest things humans ha
 
 Every achievement gets four scores from 1 to 10. Decimals are fine.
 
-**Luck**: the odds of the run that counted. You put in the real odds as `odds` (436000 means 1 in 436,000) and the site turns it into a score. Every extra zero is +1:
+**Luck**: the odds of the run that counted. Only count serious runs, the ones that got far enough to actually threaten a win, like runs past 50% in a GD level. Deaths in the first few seconds of a quick retry don't count, or feats with fast retries would look way luckier than they are. You put in the odds as `odds` (436000 means 1 in 436,000) and the site turns it into a score. Every extra zero is +1:
 
 | Odds | Luck |
 |---|---|
@@ -31,7 +31,9 @@ Every achievement gets four scores from 1 to 10. Decimals are fine.
 | 20 years | 9 |
 | a lifetime | 10 |
 
-**Ceiling**: how many people are even able to do it, with unlimited time and determination. Not how many are trying right now. You put in "1 in how many people" as `ceiling` and it works like Luck, every extra zero is +1. 1 means almost anyone, 1e9 means maybe nobody else alive.
+**Ceiling**: how many people are physically able to do what the feat needs at all, like the inputs, speed, strength or stamina. Not how many could get good enough, and not how many are trying right now. You put in "1 in how many people" as `ceiling` and it works like Luck, every extra zero is +1. 1 means almost anyone has the body for it, 1e9 means maybe nobody else alive does.
+
+For example, Grief has a ceiling of 1.3. Its inputs are hard, but most people's hands could physically do them, so almost all of its difficulty is in Grind and Luck instead.
 
 **Stakes**: what a failed attempt costs you.
 
@@ -43,6 +45,8 @@ Every achievement gets four scores from 1 to 10. Decimals are fine.
 | lose months, or a lot of money | 6 |
 | serious injury | 8 |
 | you probably die | 10 |
+
+In-between values are fine. A 5 sits between losing hours and losing months, a 9 is between serious injury and probably dying, and so on.
 
 The score is Luck + Grind + Ceiling + half of Stakes, out of 35. Stakes counts half so danger matters without taking over the whole list.
 
@@ -75,6 +79,7 @@ Add an object to `src/data/achievements.json`:
 
 Optional fields:
 
+- `others`: everyone in the group who isn't named in `by`. A number shows as "and 8 others", text shows as written, like `"crew"` for "and crew". Keep `by` for real names only.
 - `victors`: people who did it after, like `[{ "name": "John Landy", "date": "1954-06-21" }]`. Each one can also have a `note`.
 - `victorCount`: total victors when there are too many to list, like Everest.
 - `note`, `image`, and `adjust` (added to the score to nudge a placement).

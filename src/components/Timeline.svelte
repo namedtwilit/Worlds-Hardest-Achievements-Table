@@ -1,5 +1,6 @@
 <script>
   import { score, formatDate } from '../lib/score.js'
+  import { credit } from '../lib/names.js'
 
   let { data, ranked, onjump } = $props()
   let mode = $state('world')
@@ -75,7 +76,7 @@
             <span class="at">#{r.at}</span>
             <span class="what">
               <span class="title">{r.name}</span>
-              <span class="who">{r.by.join(', ')}, {formatDate(r.date)}</span>
+              <span class="who">{credit(r)}, {formatDate(r.date)}</span>
             </span>
             <span class="side">
               {#if r.fresh}<span class="new">New</span>{/if}
