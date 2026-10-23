@@ -1,69 +1,129 @@
 <script>
   import { score, formatDate } from '../lib/score.js'
   import { credit } from '../lib/names.js'
+  import { toUnix, formatMoment, shift } from '../lib/time.js'
 
   let { data, ranked, onjump } = $props()
   let mode = $state('world')
 
-  const scored = data.map((a) => ({ ...a, score: score(a) }))
+  const scored = data.map((a) => ({
+    ...a,
+    score: score(a),
+    at: toUnix(a.date),
+    addedAt: toUnix(a.added),
+    victorTimes: (a.victors ?? []).map((v) => toUnix(v.date))
+  }))
   const rankNow = Object.fromEntries(ranked.map((a) => [a.id, a.rank]))
-  const thisYear = new Date().getFullYear()
-  const firstYear = Math.min(...data.map((a) => +a.date.slice(0, 4)))
-  const addedDates = [...new Set(data.map((a) => a.added))].sort()
+  const now = Math.floor(Date.now() / 1000)
+  const year = 365 * 86400
 
-  let year = $state(thisYear)
-  let step = $state(addedDates.length - 1)
+  const worldEvents = [...new Set(scored.flatMap((a) => [a.at, ...a.victorTimes]))].sort((x, y) => x - y)
+  const listEvents = [...new Set(scored.map((a) => a.addedAt))].sort((x, y) => x - y)
 
-  function upTo(a) {
-    return mode === 'world' ? +a.date.slice(0, 4) <= year : a.added <= addedDates[step]
+  let events = $derived(mode === 'world' ? worldEvents : listEvents)
+  let min = $derived(events[0])
+  let t = $state(now)
+  let typed = $state('')
+
+  const clamp = (v) => Math.min(now, Math.max(min, v))
+
+  function setMode(m) {
+    mode = m
+    t = now
+  }
+
+  function nudge(unit, amount) {
+    t = clamp(shift(t, unit, amount))
+  }
+
+  function prevEvent() {
+    const e = events.findLast((x) => x < t)
+    if (e !== undefined) t = e
+  }
+
+  function nextEvent() {
+    const e = events.find((x) => x > t)
+    t = e ?? now
+  }
+
+  function commitTyped() {
+    const v = Number(typed.trim())
+    if (typed.trim() !== '' && Number.isFinite(v)) t = clamp(Math.round(v))
+    typed = ''
+  }
+
+  function happened(a) {
+    return (mode === 'world' ? a.at : a.addedAt) <= t
   }
 
   function isNew(a) {
-    return mode === 'world' ? +a.date.slice(0, 4) === year : a.added === addedDates[step]
+    const when = mode === 'world' ? a.at : a.addedAt
+    return t - when < (mode === 'world' ? year : 86400)
   }
 
   function victorsBy(a) {
-    const listed = a.victors ?? []
-    if (mode !== 'world') return Math.max(a.victorCount ?? 0, listed.length)
-    if (year >= thisYear) return Math.max(a.victorCount ?? 0, listed.length)
-    return listed.filter((v) => +v.date.slice(0, 4) <= year).length
+    const listed = a.victorTimes.filter((v) => v <= t).length
+    if (mode !== 'world' || t >= now) return Math.max(a.victorCount ?? 0, a.victorTimes.length)
+    return listed
   }
 
   let rows = $derived(
     scored
-      .filter(upTo)
+      .filter(happened)
       .sort((x, y) => y.score - x.score)
-      .map((a, i) => ({ ...a, at: i + 1, fresh: isNew(a), victorsThen: victorsBy(a) }))
+      .map((a, i) => ({ ...a, place: i + 1, fresh: isNew(a), victorsThen: victorsBy(a) }))
   )
 
   let freshCount = $derived(rows.filter((r) => r.fresh).length)
-  let label = $derived(mode === 'world' ? String(year) : formatDate(addedDates[step]))
+  let moment = $derived(formatMoment(t))
+  let span = $derived(formatMoment(min))
 </script>
 
 <div class="timeline">
   <div class="modes">
-    <button class:on={mode === 'world'} onclick={() => (mode = 'world')}>Real history</button>
-    <button class:on={mode === 'history'} onclick={() => (mode = 'history')}>List history</button>
+    <button class:on={mode === 'world'} onclick={() => setMode('world')}>Real history</button>
+    <button class:on={mode === 'history'} onclick={() => setMode('history')}>List history</button>
   </div>
 
   <div class="scrub">
     <div class="now">
-      <span class="label">{label}</span>
+      <span class="label">{moment.date}</span>
+      <span class="clock">{moment.time} UTC</span>
+    </div>
+    <div class="meta">
+      <label class="unix">
+        <span>Unix</span>
+        <input
+          type="text"
+          inputmode="numeric"
+          placeholder={String(t)}
+          bind:value={typed}
+          onchange={commitTyped}
+          onkeydown={(e) => e.key === 'Enter' && commitTyped()}
+        />
+      </label>
       <span class="sub">
-        {rows.length} {rows.length === 1 ? 'achievement' : 'achievements'}
-        {#if freshCount}, {freshCount} new{/if}
+        {rows.length} {rows.length === 1 ? 'achievement' : 'achievements'}{#if freshCount}, {freshCount} new{mode === 'world' ? ' in the last year' : ' that day'}{/if}
       </span>
     </div>
 
-    {#if mode === 'world'}
-      <input type="range" min={firstYear} max={thisYear} bind:value={year} aria-label="Year" />
-      <div class="ends"><span>{firstYear}</span><span>{thisYear}</span></div>
-    {:else if addedDates.length > 1}
-      <input type="range" min="0" max={addedDates.length - 1} bind:value={step} aria-label="Update" />
-      <div class="ends"><span>{formatDate(addedDates[0])}</span><span>{formatDate(addedDates.at(-1))}</span></div>
-    {:else}
-      <p class="sub">Everything so far was added on {formatDate(addedDates[0])}. This fills up as the list grows.</p>
-    {/if}
+    <input type="range" min={min} max={now} step="1" bind:value={t} aria-label="Moment in time" />
+    <div class="ends"><span>{span.date}</span><span>Now</span></div>
+
+    <div class="steps">
+      <button onclick={prevEvent}>Prev</button>
+      <span class="group">
+        <button onclick={() => nudge('year', -1)}>-1y</button>
+        <button onclick={() => nudge('day', -1)}>-1d</button>
+        <button onclick={() => nudge('hour', -1)}>-1h</button>
+        <button onclick={() => nudge('second', -1)}>-1s</button>
+        <button onclick={() => nudge('second', 1)}>+1s</button>
+        <button onclick={() => nudge('hour', 1)}>+1h</button>
+        <button onclick={() => nudge('day', 1)}>+1d</button>
+        <button onclick={() => nudge('year', 1)}>+1y</button>
+      </span>
+      <button onclick={nextEvent}>Next</button>
+    </div>
   </div>
 
   {#if rows.length === 0}
@@ -73,7 +133,7 @@
       {#each rows as r (r.id)}
         <li class:fresh={r.fresh}>
           <button onclick={() => onjump(r.id)}>
-            <span class="at">#{r.at}</span>
+            <span class="at">#{r.place}</span>
             <span class="what">
               <span class="title">{r.name}</span>
               <span class="who">{credit(r)}, {formatDate(r.date)}</span>
@@ -81,7 +141,7 @@
             <span class="side">
               {#if r.fresh}<span class="new">New</span>{/if}
               {#if r.victorsThen}<span>{r.victorsThen.toLocaleString()} {r.victorsThen === 1 ? 'victor' : 'victors'}</span>{/if}
-              {#if rankNow[r.id] !== r.at}<span>#{rankNow[r.id]} now</span>{/if}
+              {#if rankNow[r.id] !== r.place}<span>#{rankNow[r.id]} now</span>{/if}
             </span>
           </button>
         </li>
@@ -152,6 +212,77 @@
     margin: 14px 0 4px;
     accent-color: var(--accent);
     cursor: pointer;
+  }
+
+  .clock {
+    font-family: var(--mono);
+    font-size: 16px;
+    color: var(--muted);
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .unix {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .unix input {
+    width: 150px;
+    padding: 4px 8px;
+    font-family: var(--mono);
+    font-size: 13px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+
+  .unix input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .group {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .steps button {
+    padding: 4px 9px;
+    font-family: var(--mono);
+    font-size: 12px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+
+  .steps button:hover {
+    color: var(--text);
+    border-color: var(--muted);
   }
 
   .ends {
