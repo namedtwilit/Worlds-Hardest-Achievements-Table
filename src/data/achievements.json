@@ -859,16 +859,15 @@
     "ceiling": 1.3,
     "stakes": 4.5,
     "tags": [
-      "game",
       "first",
       "record",
       "solo",
       "mental",
       "physical",
+      "game",
       "endurance"
     ],
-    "added": "2026-10-10",
-    "note": "436,879 attempts over 396 streams, about 2.5 years. Died at 97% twice. Luck still uses the total attempt count, it should only count runs past 50% once that number is known."
+    "added": "2026-10-10"
   },
   {
     "id": "flojo-100m",
