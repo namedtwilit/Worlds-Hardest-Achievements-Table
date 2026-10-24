@@ -8,9 +8,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0e0f11;
+        color: #e7e7e5;
+        font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+      }
+
+      .logo {
+        font-family: 'IBM Plex Mono', ui-monospace, monospace;
+        font-size: 32px;
+        color: #d9a441;
+        letter-spacing: 1px;
+      }
+
+      .full {
+        margin-top: 2px;
+        font-size: 14px;
+        color: #8b9099;
+      }
+
+      p {
+        margin: 28px 0 0;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <main>
+      <span class="logo">W.H.A.T</span>
+      <span class="full">Worlds Hardest Achievements Table</span>
+      <p>Work in progress. The list is being fixed up and will be back soon.</p>
+    </main>
   </body>
 </html>
