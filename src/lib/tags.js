@@ -4,7 +4,7 @@ export const tags = {
   survival: { label: 'Survival', info: 'Staying alive when it should not have been possible' },
   science: { label: 'Science', info: 'Math, medicine, engineering and discovery' },
   space: { label: 'Space', info: 'Anything off the planet' },
-  game: { label: 'Game', info: 'Done in a video game' },
+  game: { label: 'Game', info: 'Video games, board games, card games and game shows' },
   mind: { label: 'Mind', info: 'Chess, memory, quizzes and mental math' },
   stunt: { label: 'Stunt', info: 'Daredevil feats done on purpose' },
   first: { label: 'First', info: 'Nobody had done it before' },
