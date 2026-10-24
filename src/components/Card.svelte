@@ -10,6 +10,10 @@
   let victors = $derived([...(a.victors ?? [])].sort((x, y) => x.date.localeCompare(y.date)))
   let victorTotal = $derived(Math.max(a.victorCount ?? 0, victors.length))
 
+  const tagOrder = Object.keys(tags)
+  const place = (t) => (tagOrder.includes(t) ? tagOrder.indexOf(t) : tagOrder.length)
+  let sortedTags = $derived([...a.tags].sort((x, y) => place(x) - place(y)))
+
   function joinNames(names) {
     if (names.length <= 2) return names.join(' and ')
     return `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`
@@ -48,7 +52,7 @@
 
     <div class="foot">
       <ul class="tags">
-        {#each a.tags as t}
+        {#each sortedTags as t}
           <li title={tags[t]?.info}>{tags[t]?.label ?? t}</li>
         {/each}
       </ul>

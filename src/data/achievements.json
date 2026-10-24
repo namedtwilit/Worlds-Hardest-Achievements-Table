@@ -867,7 +867,8 @@
       "game",
       "endurance"
     ],
-    "added": "2026-10-10"
+    "added": "2026-10-10",
+    "note": "436,879 attempts over 396 streams, about 2.5 years. Died at 97% twice. Luck still uses the total attempt count, it should only count runs past 50% once that number is known."
   },
   {
     "id": "flojo-100m",
